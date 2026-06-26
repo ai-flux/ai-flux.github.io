@@ -1,0 +1,107 @@
+{
+  "about": {
+    "title": "About AI Flux",
+    "subtitle": "Your Trusted Source for Curated AI Intelligence",
+    "hero": {
+      "heading": "AI Consulting & Intelligence, Aggregated",
+      "subheading": "Professional · Accurate · Timely",
+      "description": "AI Flux delivers cutting-edge technology intelligence through professional curation, precise translation, and real-time aggregation — empowering decision-makers with actionable insights."
+    },
+    "sections": [
+      {
+        "icon": "brain",
+        "title": "AI Consulting",
+        "points": [
+          "Strategic advisory on AI adoption and roadmap planning",
+          "Technical feasibility assessment and proof-of-concept guidance",
+          "Custom solution design tailored to enterprise needs"
+        ]
+      },
+      {
+        "icon": "layers",
+        "title": "Intelligent Aggregation",
+        "points": [
+          "Multi-source intelligence gathering from global tech outlets",
+          "Automated categorization and relevance scoring",
+          "Cross-reference analysis for comprehensive coverage"
+        ]
+      },
+      {
+        "icon": "award",
+        "title": "Professional Excellence",
+        "points": [
+          "Wall Street Journal standard editorial curation",
+          "Expert human review against superficial machine output",
+          "Bilingual proficiency — English sourcing meets native Chinese readability"
+        ]
+      },
+      {
+        "icon": "target",
+        "title": "Uncompromising Accuracy",
+        "points": [
+          "Multi-layer fact-checking and source verification",
+          "Transparent citation and original-source attribution",
+          "Correction and retraction policy with full accountability"
+        ]
+      },
+      {
+        "icon": "clock",
+        "title": "Timely Delivery",
+        "points": [
+          "Real-time news feed with sub-hour refresh cycles",
+          "Daily digest for busy professionals",
+          "Breaking-story flash alerts on critical developments"
+        ]
+      }
+    ],
+    "values": [
+      { "icon": "star", "text": "Independence — editorial decisions free from commercial influence" },
+      { "icon": "shield", "text": "Integrity — every piece of information is traceable to its origin" },
+      { "icon": "zap", "text": "Velocity — speed without sacrificing depth or rigor" }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you",
+    "description": "Have a question, suggestion, or collaboration idea? Reach out through any of the channels below.",
+    "methods": [
+      {
+        "icon": "mail",
+        "label": "Email",
+        "value": "hello@aiflux.ai",
+        "href": "mailto:hello@aiflux.ai"
+      },
+      {
+        "icon": "facebook",
+        "label": "Facebook",
+        "value": "@AI.Flux.Insights",
+        "href": "https://facebook.com/AI.Flux.Insights"
+      },
+      {
+        "icon": "twitter",
+        "label": "X (Twitter)",
+        "value": "@AI_Flux",
+        "href": "https://x.com/AI_Flux"
+      },
+      {
+        "icon": "linkedin",
+        "label": "LinkedIn",
+        "value": "AI Flux Insights",
+        "href": "https://linkedin.com/company/ai-flux-insights"
+      },
+      {
+        "icon": "github",
+        "label": "GitHub",
+        "value": "ai-flux",
+        "href": "https://github.com/ai-flux"
+      },
+      {
+        "icon": "message-circle",
+        "label": "WeChat",
+        "value": "AI_Flux_Official",
+        "href": "#"
+      }
+    ],
+    "response_note": "We typically respond within 24 hours on business days."
+  }
+}
