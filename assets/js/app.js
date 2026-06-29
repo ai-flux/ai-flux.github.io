@@ -58,6 +58,7 @@
     });
 
     articleGrid.innerHTML = html;
+    articleGrid.style.visibility = 'visible';
 
     if (loadMoreBtn) {
       if (filtered.length > visibleCount) {
