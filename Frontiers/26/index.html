@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="AI Flux">
+    
+<title>Apple Unveils Core AI Framework, Tailoring On-Device Generative AI for Proprietary Silicon - AI Flux &mdash; Curated Tech Intelligence</title>
+<meta name="description" content="At the 2026 Worldwide Developers Conference, Apple introduced Core AI, the official successor to Core ML. The framework enables fully offline execution of large language models and generative AI on-device, while supporting both converted PyTorch models and pre-optimized open-source alternatives." />
+<link rel="canonical" href="https://ai-flux.top/Frontiers/26/" />
+<meta property="og:title" content="Apple Unveils Core AI Framework, Tailoring On-Device Generative AI for Proprietary Silicon" />
+<meta property="og:description" content="At the 2026 Worldwide Developers Conference, Apple introduced Core AI, the official successor to Core ML. The framework enables fully offline execution of large language models and generative AI on-device, while supporting both converted PyTorch models and pre-optimized open-source alternatives." />
+<meta property="og:image" content="https://ai-flux.top/asset/images/article_26/image_0.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Apple Unveils Core AI Framework, Tailoring On-Device Generative AI for Proprietary Silicon",
+  "description": "At the 2026 Worldwide Developers Conference, Apple introduced Core AI, the official successor to Core ML. The framework enables fully offline execution of large language models and generative AI on-device, while supporting both converted PyTorch models and pre-optimized open-source alternatives.",
+  "image": "https://ai-flux.top/asset/images/article_26/image_0.png",
+  "datePublished": "2026-06-29 03:28:25"
+}
+</script>
+
+    <link rel="stylesheet" href="../../assets/css/style.css?v=2">
+        <!-- ===== 统计代码钩子（由 config.yaml 驱动） ===== -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XGDSPRE0L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-0XGDSPRE0L');
+    </script>
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?85296c1ac38b768654710957114c951f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+    
+    <script>console.log('Custom analytics loaded');
+</script>
+    
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                <div class="site-title"><a href="../../">AI Flux</a></div>
+                <div class="header-nav">
+                    <a href="../../about/">About</a>
+                    <span class="header-nav-sep">|</span>
+                    <a href="../../contact/">Contact</a>
+                </div>
+            </div>
+        </header>
+        <nav class="category-nav">
+            <div class="container" style="display:flex;gap:24px;">
+                <a href="../../" class="">Home</a>
+                
+                <a href="../../?category=Frontiers" class="active">Frontiers</a>
+                
+                <a href="../../?category=Deep Reads" class="">Deep Reads</a>
+                
+                <a href="../../?category=Business" class="">Business</a>
+                
+                <a href="../../?category=Dev Hub" class="">Dev Hub</a>
+                
+                <a href="../../?category=Tools" class="">Tools</a>
+                
+                <a href="../../?category=Reports" class="">Reports</a>
+                
+            </div>
+        </nav>
+        
+<main><div class="container">
+    <article class="article-detail">
+        <h1>Apple Unveils Core AI Framework, Tailoring On-Device Generative AI for Proprietary Silicon</h1>
+        <div class="meta">
+            <span class="category-tag" style="display:inline-block;background:var(--wsj-accent);color:white;font-family:var(--wsj-font-sans);font-size:11px;font-weight:600;padding:2px 10px;border-radius:12px;text-transform:uppercase;letter-spacing:0.5px;margin-right:12px;">Frontiers</span>
+            <span>2026-06-29 03:28:25</span>
+        </div>
+        <div id="tab-content-wall_street" class="tab-content">
+            
+                
+                    
+                <p>Apple Unveils Core AI Framework, Tailoring On-Device Generative AI for Proprietary Silicon</p>
+                    
+                
+                    
+                <p>At WWDC 2026, Apple released Core AI, the official successor to Core ML. The framework enables developers to run large language models and generative AI entirely on-device, with support for custom converted PyTorch models and pre-optimized open-source models.</p>
+                    
+                
+                    
+                <p>Apple stated that Core AI delivers a unified architecture capable of deploying vision models as small as 3 billion parameters and inference models up to 70 billion parameters across iPhone, iPad, Mac, and Apple Vision Pro.</p>
+                    
+                
+                    
+                <p>Core AI underpins Apple Intelligence. As Apple rolls out its next-generation operating systems and developer toolchains, the framework allows developers to build what Apple terms 'custom intelligence features.' Core AI runs exclusively on Apple Silicon, guaranteeing user data privacy, eliminating server dependency, and incurring no per-token cloud expenses.</p>
+                    
+                
+                    
+                
+                    
+                <p>Core AI's key capabilities include: unified hardware access that lets workloads run seamlessly across CPU, GPU, and Neural Engine through a single API; memory-safe Swift APIs that enable zero-copy data paths and fine-grained inference memory control; and ahead-of-time (AOT) compilation, which shifts pre-processing off-device to achieve near-instant model loading.</p>
+                    
+                
+                    
+                <p>As noted, PyTorch models can be converted to Core AI models via Core AI PyTorch. The simplest method is to export PyTorch as torch.export.ExportedProgram, then convert it to a CoreAI AIProgram using TorchConverter().add_exported_program(ep).to_coreai().</p>
+                    
+                
+                    
+                <p>Alternatively, developers can leverage the library's built-in composite operators — including attention mechanisms, RoPE embeddings, RMSNorm, and gather-matmul — to construct new Core AI models from existing PyTorch models, register custom lowering functions that map novel PyTorch operators to Core AI IR, or author custom Metal kernels for deeper, low-level optimization.</p>
+                    
+                
+                    
+                <p>A critical step in converting PyTorch models is compressed deployment targeting Apple hardware. The process applies optimizations such as quantization and palletization, which are natively aligned with Core AI runtime execution modes to guarantee efficient on-device performance.</p>
+                    
+                
+                    
+                <p>Model compression reduces memory footprint — including both disk size and runtime usage — lowers inference latency, cuts power consumption, or achieves all of these optimizations simultaneously.</p>
+                    
+                
+                    
+                <p>A defining characteristic of AIModel execution is automatic specialization for the current hardware and operating system version. This occurs upon the model's initial load into the model cache; consequently, first-time usage may take longer than subsequent invocations. Developers can customize SpecializationOptions, inspect or delete cached models through AICacheModel, and share the model cache across app groups.</p>
+                    
+                
+                    
+                <p>With Core AI's introduction, Apple provides three distinct approaches for ML and AI on its operating systems: Core ML, Core AI, and MLX Swift. Per developer discussions on Hacker News, Apple's recommended usage is: Core ML for 'classic non-neural network ML' — decision trees or tabular feature engineering; Core AI for neural networks and Transformers; and MLX for custom model weights, albeit with potentially lower performance. Community feedback further indicated that while Core AI 'makes integrating high-performance LLMs easier,' its long-term trajectory hinges on 'official Core AI/community development going forward.'</p>
+                    
+                
+                    
+                <p>
+</p>
+                    
+                
+            
+        </div>
+    </article>
+</div></main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <span class="footer-copy">&copy; 2026 AI Flux &mdash; Curated Tech Intelligence &middot; Professional Translation</span>
+                <span class="footer-page-links">
+                    <a href="../../about/">About</a>
+                    <a href="../../contact/">Contact</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

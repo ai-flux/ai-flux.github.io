@@ -1,47 +1,27 @@
 [
   {
-    "id": 78,
-    "_id64": "aHR0cHM6Ly9haWVyYS5jb20uY24vMjAyNi8wNi8yOS9vdGhlci9hZG1pbi8xMDE0MjMvJWU1JWJkJTk1JWU0JWI4JTgwJWU5JTgxJThkJWU1JWIwJWIxJWU1JWFlJThjJWU0JWJhJThiJWU0JWJhJTg2JWVmJWJjJTgxJWU2JTg5JThiJWU2JThhJThhJWU2JTg5JThiJWU1JWI4JWE2JWU0JWI4JTgwJWU2JWFjJWExJWVmJWJjJThjYWklZTUlYWQlYTYlZTQlYmMlOWElZTYlOWIlYmYlZTQlYmQlYTAlZTUlYTElYWIlZTglYTElYTglZTUlODglYjcv",
-    "title": "One Demonstration Suffices: Hands-On Guidance Enables AI to Automate Form Completion and Web Navigation",
-    "summary": "New Intelligence Report. [New Intelligence Overview] Browser-based agents have never lacked the ability to operate browsers; rather, they expend excessive effort on exploration. BrowserBC distills human interaction trajectories into reusable Skills, enabling Behavior Cloning: a single human demonstration suffices for the agent to replicate the workflow.",
-    "category": "Frontiers",
-    "thumbnail": "/asset/images/article_78/image_0.jpg",
-    "url": "/Frontiers/78/",
-    "created_at": "2026-06-29 09:37:41"
+    "id": 96,
+    "_id64": "fe6674cfcc57790b646b0745ddabc6ed95fb87760d97622f060d9f90a6b52ed8",
+    "title": "After Nearly Eight Years, a Sudden Layoff: What Programmers Should Fear Most in the AI Era Isn't AI",
+    "summary": "A LinkedIn post written by former ServiceNow developer Noah B. Wilson has been widely circulated among technology professionals in recent days.",
+    "category": "Business",
+    "thumbnail": "",
+    "url": "/Business/96/",
+    "created_at": "2026-06-30 03:18:49"
   },
   {
-    "id": 79,
-    "_id64": "aHR0cHM6Ly9haWVyYS5jb20uY24vMjAyNi8wNi8yOS9vdGhlci9hZG1pbi8xMDE0MTAvJWU1JWE1JWI5JWU3JTk0JWE4YWklZTclYTklYmYlZTglYjYlOGElZTUlOWIlOWUlZTYlYjMlYjAlZTUlOWQlYTYlZTUlYjAlYmMlZTUlODUlOGIlZTUlOGYlYjclZTYlYjIlODklZTglODglYjklZTUlYmQlOTMlZTYlOTklOWElZWYlYmMlOGMyNDAlZTQlYjglODclZTQlYmElYmElZTclOWMlOGIlZTUlOTMlYWQlZTQlYmElODYv",
-    "title": "An AI-Powered Vlog Revisits the Titanic's Final Night Through First-Person Immersion; 2.4 Million Viewers Are Reduced to Tears",
-    "summary": "Reported by Xinzhiyuan. [Editor's Note] An AI-powered time-travel Vlog has recently captivated online audiences worldwide. By employing a first-person perspective, the content immerses viewers in ancient Rome and the Titanic with startling verisimilitude. As the historical barrier dissolves, a substantial number of viewers — convinced of their own presence at these events — have been moved to tears.",
-    "category": "Frontiers",
-    "thumbnail": "/asset/images/article_79/image_0.jpg",
-    "url": "/Frontiers/79/",
-    "created_at": "2026-06-29 09:37:41"
-  },
-  {
-    "id": 80,
-    "_id64": "aHR0cHM6Ly9haWVyYS5jb20uY24vMjAyNi8wNi8yOS9vdGhlci9hZG1pbi8xMDEzODUvNCVlNCViOCVhYSVlNSU4ZCU4YSVlNiU5YyU4OCVlZiViYyU4Y29wZW5haSVlNiViOCU4NSVlNyVhOSViYSVlNCViYSU4NiVlNiU5NSViNCVlNCViOCVhYWdwdC00JWU1JWFlJWI2JWU2JTk3JThmLw==",
-    "title": "GPT-4 Family Fully Retired by OpenAI in Four and a Half Months",
-    "summary": "Reported by Synced | [Synced导读] The final GPT-4 model has been retired. Over four and a half months, OpenAI phased out its entire GPT-4 family, with GPT-4.5 as the last to depart. No formal farewell was given, only a single changelog entry — model retirements have become standard practice in the AI industry.",
-    "category": "Frontiers",
-    "thumbnail": "/asset/images/article_80/image_0.png",
-    "url": "/Frontiers/80/",
-    "created_at": "2026-06-29 09:37:41"
-  },
-  {
-    "id": 81,
-    "_id64": "aHR0cHM6Ly9haWVyYS5jb20uY24vMjAyNi8wNi8yOS9vdGhlci9hZG1pbi8xMDEzNzEvZ3B0NS02JWU2JTgzJWE4JWU5JTgxJWFkJWU1JTg4JTg3JWU4JTg0JTkxJWVmJWJjJTgxZmFibGUtNSVlNSU5YiU5ZSVlNSViZCU5MiVlOCVhNiU4MSVlNSU4ZiU5OCVlNSViYyViMSVlOSViOCVhMSVlNyU4OSU4OC8=",
-    "title": "GPT-5.6 Lobotomized; Fable 5 Faces a Weakened Return",
-    "summary": "Xinzhiyuan Report [Editor's Note] GPT-5.6 Sol has been disaggregated and its release restrained; Fable 5 was suspended worldwide for 72 hours before being permitted to return under restrictions. The premier models of both Anthropic and OpenAI have been \"lobotomized.\"",
-    "category": "Frontiers",
-    "thumbnail": "/asset/images/article_81/image_0.png",
-    "url": "/Frontiers/81/",
-    "created_at": "2026-06-29 09:37:41"
+    "id": 98,
+    "_id64": "4921bfefe364d6a52528410b7796cab9446f5231a618c3d5c7459313851a1853",
+    "title": "Why the AI Era's Dividends Remain Out of Reach for the Majority",
+    "summary": "A viral anecdote resonates deeply. In my youth, I remarked to my father: 'Your generation had opportunity at every turn — reform-era commerce, intermediaries, factory ownership — all paths to wealth, with housing costs near zero. Opportunities were ubiquitous.' Now, standing in the AI era, the truth crystallizes: It was never about effort. Ordinary people are structurally unable to seize the moment.",
+    "category": "Deep Reads",
+    "thumbnail": "",
+    "url": "/Deep Reads/98/",
+    "created_at": "2026-06-30 03:18:49"
   },
   {
     "id": 1,
-    "_id64": "aHR0cHM6Ly93d3cubGVpcGhvbmUuY29tL2NhdGVnb3J5L2FpLzlOVm5XTXVxS0hyVmlTMzUuaHRtbA==",
+    "_id64": "796fe996ffa78a7addbce9f72c8a439ff39f87c3fb98eefe993f3f7a66ca83ed",
     "title": "Musk Redirects the Battle: Grok Build 0.2.60 Takes Aim at Agent Runtime",
     "summary": "Grok Build CLI: A Modest Yet Pivotal Release. On June 21, 2026, Grok Build discreetly rolled out version 0.2.60, first reported by X-platform technology commentator Mark Kretschmann. Contrary to conventional major releases, this iteration delivered neither new model capabilities nor updated Benchmarks, focusing instead on session recovery, context compression, MCP tool output, and a host of other Runtime details.",
     "category": "Deep Reads",
@@ -51,7 +31,7 @@
   },
   {
     "id": 2,
-    "_id64": "aHR0cHM6Ly93d3cubGVpcGhvbmUuY29tL2NhdGVnb3J5L2FpL3d6Y1E2b1hrSTdZcXhHVjIuaHRtbA==",
+    "_id64": "f4a722f22ae122a0a0e511eeb341948f1d67cf8f43957781a10f346df0912033",
     "title": "The Fall of Daluo Technology, One Year On: How an Embodied Unicorn Died",
     "summary": "Spring 2026 finds the embodied intelligence sector embracing a capitalization wave. Unitree Technology pursues an A-share listing; AGIBOT prepares for a Hong Kong IPO; Xinghaitu and Fourier Intelligence have completed shareholding restructurings. Valuations across dozens of embodied firms now surpass ten billion yuan. Capital alignment has become the defining strategy for risk mitigation in the space. History, however, suggests that high valuations do not equate to stability. The cautionary exemplar is Daluo Robot, a former embodied unicorn. Founded by...",
     "category": "Deep Reads",
@@ -61,7 +41,7 @@
   },
   {
     "id": 3,
-    "_id64": "aHR0cHM6Ly93d3cubGVpcGhvbmUuY29tL2NhdGVnb3J5L2FpL1Z6QzIzNnhaNkhRb2I5MXouaHRtbA==",
+    "_id64": "992dcb1a67e623b750f18ca46187a3f05b25c9fe11d290678f815bc96b6e1379",
     "title": "China's First: The Embodied Data Collection \"Black Box\" Has Been Open-Sourced — the Era of Costly Embodied Data Has Ended",
     "summary": "X-Square Robot has open-sourced XRZero-G0, reducing data-acquisition costs to one-twentieth of prior levels. The embodied-intelligence sector has been swept by a wave of interest around an open-source initiative.",
     "category": "Frontiers",
@@ -71,7 +51,7 @@
   },
   {
     "id": 4,
-    "_id64": "aHR0cHM6Ly93d3cubGVpcGhvbmUuY29tL2NhdGVnb3J5L2FpL1p0NW1GbXJBZ1FQNDNLOXguaHRtbA==",
+    "_id64": "a4d770ff12306c70df610a8cabd9011ed3edda7b3d04ca9086082322e28f8f0d",
     "title": "General-Purpose or Vertical? SMB AI Firms Face an Existential Crossroads",
     "summary": "Vertical industry models, too, harbor significant commercial promise.",
     "category": "Deep Reads",
@@ -81,7 +61,7 @@
   },
   {
     "id": 5,
-    "_id64": "aHR0cHM6Ly93d3cubGVpcGhvbmUuY29tL2NhdGVnb3J5L2FpaGVhbHRoL05VUGVCWFNoYWpLdDkwbkouaHRtbA==",
+    "_id64": "701403567e367a06ac7a091c05c482a55567294738498a2328400e3f05f87f29",
     "title": "MoleculeMind Raises Over $100 Million as Investors Rally Behind AI-Powered Biology as 'New Industrial Infrastructure'",
     "summary": "MoleculeMind, an AI-driven protein design platform, has closed a Series A financing totaling over $100 million, Leiphone has reported. The round drew commitments from Blue Bridge Capital, Pudong Venture Capital, COFCO Emerging Industry Fund",
     "category": "Frontiers",
@@ -91,7 +71,7 @@
   },
   {
     "id": 6,
-    "_id64": "aHR0cHM6Ly93d3cubGVpcGhvbmUuY29tL2NhdGVnb3J5L2FpL0FCbm1CM280SkhNc2lDbVcuaHRtbA==",
+    "_id64": "ca7d52bc43a51070462ffcc122ff6db153bcb864729a4586346dedbd2f72a6dc",
     "title": "Exclusive | Peking University's Dong Hao: \"Scaling Law Confined to Data Alone Cannot Produce General-Purpose Robots\"",
     "summary": "A \"Data Volume × Task Volume\" two-dimensional Scaling paradigm represents the genuine solution for embodied AGI. Of late, embodied intelligence model iteration has decelerated amid mounting divergence.",
     "category": "Deep Reads",
@@ -100,8 +80,58 @@
     "created_at": "2026-06-29 03:28:25"
   },
   {
+    "id": 7,
+    "_id64": "49643a2598dbe28b46fce636ae62e890a7e1699533d74c3efa0603746b934d45",
+    "title": "CVPR 2026 Dispatch: The Physical Divide Between Computer Vision and Robotics Has Collapsed",
+    "summary": "Computer vision has exited the on-screen comfort zone of frame-level recognition, mounting a full-scale advance into the physical 3D world.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_7/image_0.png",
+    "url": "/Frontiers/7/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 8,
+    "_id64": "df3d345b8be2c8dc3f35ae442c6b79ad50964fa4984193da0e07f58791f65c83",
+    "title": "CVPR 2026 Opens with Emotional Tribute to Jian Sun; GDUT Undergraduates Claim Top Honor Using Antique Titan GPUs",
+    "summary": "A faint gleam amid the age of computational hegemony: undergraduates from GDUT secured a major conference prize using outdated Titan GPUs. 'A decade to nurture a tree' — the computer vision community conferred its highest accolade upon the late trailblazer Jian Sun. On June 5 local time, following two days of workshop sessions, CVPR 2026 (IEEE Conference on Computer Visio...",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_8/image_0.png",
+    "url": "/Frontiers/8/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 9,
+    "_id64": "3a404dd34fbe5f9a1d1445a136bf7e989bd00576f461ea4ea9d6fb84d08eb8bb",
+    "title": "Shihang Intelligence Secures Over RMB 1 Billion in Series A, Topping Global Marine Robotics Funding Round Record",
+    "summary": "Shihang Intelligence's robots have achieved large-scale commercial deployment across ship hull cleaning, offshore wind and solar energy, marine aquaculture, and seabed exploration.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_9/image_0.jpg",
+    "url": "/Frontiers/9/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 10,
+    "_id64": "0b0ab475b6ef3a5c85402fcd75c900379eb28f51c240fffa2399813e9ab5c667",
+    "title": "Dialogue with Wang Qibin of Lingchu AI: \"Manipulation Is the Crown Jewel; Mobility Merely the Admission Ticket\"",
+    "summary": "A two-year outlook on the embodied intelligence industry and Lingchu's targeted full-stack wager. In 2026, a growing number of companies on the embodied intelligence track are contemplating mid-course pivots.",
+    "category": "Deep Reads",
+    "thumbnail": "/asset/images/article_10/image_0.jpg",
+    "url": "/Deep Reads/10/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 26,
+    "_id64": "0e32cc87dac72fbc59d034418f3236c051215b87ab089d8e784edc0318ece4ef",
+    "title": "Apple Unveils Core AI Framework, Tailoring On-Device Generative AI for Proprietary Silicon",
+    "summary": "At the 2026 Worldwide Developers Conference, Apple introduced Core AI, the official successor to Core ML. The framework enables fully offline execution of large language models and generative AI on-device, while supporting both converted PyTorch models and pre-optimized open-source alternatives.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_26/image_0.png",
+    "url": "/Frontiers/26/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
     "id": 27,
-    "_id64": "aHR0cHM6Ly93d3cuaW5mb3EuY24vYXJ0aWNsZS9LNEJ3NldUMjVXR0xGUnRpM0hWWQ==",
+    "_id64": "7218d82ec7ac94d366a78a9c6977df475ec5b51d01d04de4cced3b0da4787629",
     "title": "23rd ChinaJoy Set for July 31: \"Travel with AI\" to Reshape Global Digital Entertainment Landscape",
     "summary": "ChinaJoy 2026 dates officially locked.",
     "category": "Dev Hub",
@@ -111,7 +141,7 @@
   },
   {
     "id": 31,
-    "_id64": "aHR0cHM6Ly93d3cuaW5mb3EuY24vYXJ0aWNsZS9BS3RMYjUya2JJZnA2OFNrT0h1VQ==",
+    "_id64": "5c135a5e6cdaac8599167c8c63a09e70a995839b6823f76eedbb7aed794a090e",
     "title": "Google Endures a Sustained Talent Hemorrhage",
     "summary": "If AGI proves not to be the triumph of a singular text model but rather a protracted contest of intelligent systems, world comprehension, and scientific discovery, then Google occupies one of the most favorable positions.",
     "category": "Frontiers",
@@ -120,8 +150,38 @@
     "created_at": "2026-06-29 03:28:25"
   },
   {
+    "id": 36,
+    "_id64": "fee6fe00c6a7b8de76b70ff413b74affc0a645c3489c2915feb5728870d3a3c8",
+    "title": "2026 Beijing Zhiyuan Conference Commences | BAAI Propels \"Three-Body Interaction\" Among AI, Physical World, and Life Sciences — From \"WuDao\" to \"WuJie\"",
+    "summary": "The 8th Beijing Zhiyuan Conference convened June 12, 2026 at the Zhongguancun International Innovation Center. Hosted by BAAI, the gathering brands itself as an \"AI insider academic summit\" — defined by cutting-edge technology, international outlook, and emerging talent.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_36/image_0.jpg",
+    "url": "/Frontiers/36/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 37,
+    "_id64": "4091bb9eb621beeaf5aea320a4f9bba68d80cb59422bb9e84d55d6055f79f27e",
+    "title": "Moonshot AI's Kimi avoids a price war abroad—what gives it the edge against the Big Three of AI?",
+    "summary": "\"Our focus remains on the model; heavy system integration and delivery are not part of the plan.\"",
+    "category": "Frontiers",
+    "thumbnail": "",
+    "url": "/Frontiers/37/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 38,
+    "_id64": "6d9ac3b6a5daa3f774ab874ad88f8588b94120c93e3303c0a35f8d4c2d12ca55",
+    "title": "No KPI, No Performance Targets: MiniMax Grants HK$600M in Stock to Employees, Fully Vested Upon Tenure Completion; Apple Lobbies Trump Administration to Source DRAM from China's CXMT; DeepSeek and Peking University Open-Source DSpark | AI Weekly",
+    "summary": "View More Industry Coverage >>",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_38/image_0.png",
+    "url": "/Frontiers/38/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
     "id": 42,
-    "_id64": "aHR0cHM6Ly9uZXdzLmFpYmFzZS5jbi9uZXdzLzI5MjA1",
+    "_id64": "2d76d24a57c9e285f9209cdb8dfb6357a459063b66721830321c5ba9e9449f2a",
     "title": "Baidu Qianfan Halts Coding Plan Renewals; Token Plan Metered Pricing Set for July Launch",
     "summary": "Baidu Intelligent Cloud ceased Qianfan Coding Plan renewals four months post-launch, confirming an abrupt strategic pivot. A Token Plan personal edition is slated for early July, replacing fixed subscriptions with elastic usage-based billing and expanded model choices — a move to accelerate generative AI monetization.",
     "category": "Tools",
@@ -130,8 +190,38 @@
     "created_at": "2026-06-29 03:28:25"
   },
   {
+    "id": 43,
+    "_id64": "9b8b565ca6fc7c47f822c52c5d61409682fcc6a658a920756619bece3349638e",
+    "title": "DingTalk's \"Wukong\" Secures the World's First AI Management System International Certification, Marking a New Standardized Phase for AI Governance",
+    "summary": "DingTalk's AI agent platform \"Wukong\" has secured ISO/IEC 42001:2023 certification — the inaugural international standard for AI management systems. The certification spans AI governance, security compliance, and full lifecycle management, underscoring DingTalk's extension of AI governance from foundational infrastructure to enterprise-grade application layers.",
+    "category": "Tools",
+    "thumbnail": "",
+    "url": "/Tools/43/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 44,
+    "_id64": "3f56fe2a7d0d20929374b08cd0ae3e0ce90cd34109f1c4c573ad00750dda9832",
+    "title": "AI Shopping Guides Hit 16% Accuracy, Shanghai Consumer Council Warns Platforms Against Algorithmic Exploitation",
+    "summary": "Only 16% of consumers rated AI shopping assistants as accurate in a Shanghai Consumer Council 618 survey, with nearly 40% reporting that AI disproportionately pushed premium-priced items. More than 30% of users identified cross-account price variances for identical goods, fueling allegations of algorithmic price discrimination. The Council called on platforms to realign algorithmic incentives around user experience.",
+    "category": "Tools",
+    "thumbnail": "",
+    "url": "/Tools/44/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 45,
+    "_id64": "f9e3b734b3ff27d51bf2de0644dc852cc2873ab3ef38893d7a767dfa23316902",
+    "title": "Meituan's \"AI for Small Shops\" Initiative Debuts in Beijing, Ushering Millions of SME Restaurants into AI-Powered Digital Operations",
+    "summary": "The inaugural leg of Meituan's \"AI for Small Shops\" initiative touched down in Beijing, deploying AI-driven digital management tools to millions of SME restaurateurs. By lowering the technology threshold, the program empowers micro merchants to elevate operational efficiency — signaling that Meituan's digital enablement push has entered a phase of mass adoption.",
+    "category": "Tools",
+    "thumbnail": "",
+    "url": "/Tools/45/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
     "id": 46,
-    "_id64": "aHR0cHM6Ly9uZXdzLmFpYmFzZS5jbi9uZXdzLzI5MjAw",
+    "_id64": "8491b4b7de04314bbd363294fc853adc282867507fd4a4e9c5752a3540da80d6",
     "title": "AI's Thirst: A Five-Second Video Drains Power Equivalent to Ten Phone Charges as Industry Devours Global Energy and Water Supplies.",
     "summary": "A five-second AI-generated video consumes enough electricity to charge ten mobile phones, China's National Energy Administration reported, underscoring how the industry's meteoric expansion is straining global energy and water supplies. Surging computational demand has thrust data-center power consumption and cooling-water usage into the global spotlight, raising questions about the sector's long-term sustainability.",
     "category": "Reports",
@@ -140,23 +230,93 @@
     "created_at": "2026-06-29 03:28:25"
   },
   {
+    "id": 55,
+    "_id64": "025629dab7d26e29247ffef61d8502ce58dcd005cd034565125791e002747ad1",
+    "title": "AI Daily: Volcanic Engine Unveils Doubao Seedance 2.5 Suite; Shengshu's Vidu Q3 Deploys on Huawei Cloud; Baichuan Intelligence Ships M4 Model",
+    "summary": "Welcome to AI Daily — your daily briefing on the artificial intelligence landscape. Each edition curates top AI developments for developers, offering a clear lens on technology trends and emerging AI-powered products and applications.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_55/image_0.jpg",
+    "url": "/Frontiers/55/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 59,
+    "_id64": "754e91731507e8ff39ed2ace95de1d1aa315984364763834ad598592946fdb50",
+    "title": "ByteDance Unveils Seedance 2.0 Mini; Kimi 2.7 Code High-Speed LLM Debuts; DeepSeek Closes $7B+ Series A at $50B+ Valuation",
+    "summary": "ByteDance's Volcano Engine debuts Seedance 2.0 Mini, halving per-second video generation costs. Moonshot AI rolls out the Kimi 2.7 Code high-speed large language model. DeepSeek secures more than $7 billion in its Series A, pushing its valuation past $50 billion.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_59/image_0.png",
+    "url": "/Frontiers/59/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 60,
+    "_id64": "3545f837444471e2e65f3402000a2887ef2cb3b3e0873961cf52dbbfad798a68",
+    "title": "AI Daily: Doubao Rolls Out Task Mode; Yuanbao Connects to ima Public Knowledge Base; Zhipu Releases GLM-5.2 Under MIT License",
+    "summary": "Doubao's new 'Task Mode' enables multi-round search and automated PPT generation, marking its shift toward an AI Agent architecture. Yuanbao has been integrated with ima's public knowledge repository, granting users direct search-and-query access. Zhipu AI has released GLM-5.2 in its entirety under the MIT license. WeChat Open Platform has published its AI ecosystem integration guidelines.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_60/image_0.jpg",
+    "url": "/Frontiers/60/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 61,
+    "_id64": "7f80d07b5ffc0591f5e4c517a2901d0e40ad11052cf30b7a12567e7a039d0e6c",
+    "title": "AI Daily: AutoNavi's 'Wendian' Opens AI Capabilities to Third Parties; Dianping Targets AI-Generated Fake Reviews; Kimi Set to Launch AI-Native Credit Card",
+    "summary": "AutoNavi Wendian rolls out open API access for AI capabilities, delivering enterprise-grade business intelligence to small and micro merchants. Dianping intensifies its crackdown on AI-generated fake reviews to safeguard platform authenticity. Moonshot AI collaborates with financial institutions to debut the Kimi AI-native credit card.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_61/image_0.jpg",
+    "url": "/Frontiers/61/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 62,
+    "_id64": "adcca58d3540635edfa9127010e835b565486c4bfdeaa504c05895d9ab07ac3f",
+    "title": "A Fortnight Past the Transition from Cursor to Codex: An Unvarnished Assessment",
+    "summary": "By April 2025, it had become increasingly apparent that AI was approaching commercial viability within the coding domain. Despite its then-nascent positioning as little more than an assistive programming tool, a self-funded subscription to the increasingly popular Cursor was procured at a cost of $20 per month. Shortly thereafter, in late April 2025, the company began provisioning enterprise-tier subscriptions for its employees. Notably, Cursor voluntarily refunded the remaining balance of the personal subscription — a gesture that fostered a decidedly favorable disposition toward the platform.",
+    "category": "Business",
+    "thumbnail": "",
+    "url": "/Business/62/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 67,
+    "_id64": "934d37bb2b729885980c1bba606919b8723ce8eeb7f31cea11596fa644d7184b",
+    "title": "Robots Acquire a \"Universal Brain\": RoboScience Debuts Visics Model, Enabling Cross-Scenario Autonomy",
+    "summary": "As artificial intelligence advances toward embodied intelligence, robotics is undergoing a structural shift away from fragmentation. On June 24, RoboScience unveiled Visics, a general-purpose embodied large model, and disclosed its underlying architecture—VLOA (Vision-Language-Object-Action).",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_67/image_0.jpg",
+    "url": "/Frontiers/67/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 68,
+    "_id64": "4959a29a4af05e0879d271258ef3e0e0b27524925f38f50b9ced1e34c7f0d86f",
+    "title": "AI Daily: Xiaomi Open-Sources MiMo Code; JD MALL Deploys First Humanoid Robots; Google Unveils DiffusionGemma",
+    "summary": "Xiaomi has open-sourced MiMo Code, a terminal-based AI coding assistant featuring a free multimodal model capable of thousands of sequential tool invocations. JD MALL's first humanoid robots have been deployed for customer guidance and delivery services. Google introduced DiffusionGemma, merging diffusion model generation with a lightweight Gemma architecture.",
+    "category": "Business",
+    "thumbnail": "/asset/images/article_68/image_0.jpg",
+    "url": "/Business/68/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
+    "id": 69,
+    "_id64": "d834f81c74ec4ccbe4fa38da0672a659a6718ee6d256299456c1b2d70cec069e",
+    "title": "AI Daily: Meitu Xiuxiu Joins WeChat AI Ecosystem; Qwen Unveils Full-Cycle College-Application Agent; Meituan Debuts AI Browser Tabbit 1.0",
+    "summary": "Meitu Xiuxiu has been admitted as one of the first beta applications in the WeChat AI ecosystem. Alibaba's Qwen has released a full-cycle agent for Gaokao college applications. Meituan's AI browser, Tabbit 1.0, has been officially deployed with intelligent browsing capabilities. A new global payment channel for AI agents has been established by Ant Group, enabling autonomous cross-border transactions.",
+    "category": "Business",
+    "thumbnail": "/asset/images/article_69/image_0.jpg",
+    "url": "/Business/69/",
+    "created_at": "2026-06-29 03:28:25"
+  },
+  {
     "id": 71,
-    "_id64": "aHR0cHM6Ly9uZXdzLmFpYmFzZS5jbi9kYWlseS8yODc0Mw==",
+    "_id64": "6795459240efef23821b7f9bc340c088bf2ea663180ccdc3806e6edc4ab235de",
     "title": "AI Daily: WeChat Open Platform Publishes AI Ecosystem Access Guidelines; Moonshot AI Secures Additional $2 Billion in Funding; ChatGPT Rolls Out Lockdown Mode in Emergency Response",
     "summary": "WeChat Open Platform issues AI ecosystem access guidelines, enabling direct invocation of mini-programs by WeChat AI. Moonshot AI closes an additional $2 billion financing round to accelerate Kimi R&D. ChatGPT deploys lockdown mode on an urgent basis to strengthen user privacy safeguards.",
     "category": "Business",
     "thumbnail": "/asset/images/article_71/image_0.png",
     "url": "/Business/71/",
-    "created_at": "2026-06-29 03:28:25"
-  },
-  {
-    "id": 72,
-    "_id64": "aHR0cHM6Ly9uZXdzLmFpYmFzZS5jbi9kYWlseS8yODY5Mw==",
-    "title": "AI Daily: Alibaba Debuts Official NBA Chat LLM; Ideogram 4.0 Goes Open-Source; OpenAI Revamps ChatGPT Memory",
-    "summary": "Ideogram 4.0, open-sourced at 9.3B parameters, claims the title of strongest text-rendering AI model. NBA China and Alibaba jointly introduced the first official LLM, NBA Chat. OpenAI revamped ChatGPT's memory system under the Dreaming V3 framework, targeting persistent issues of staleness and inaccuracy.",
-    "category": "Business",
-    "thumbnail": "/asset/images/article_72/image_0.jpg",
-    "url": "/Business/72/",
     "created_at": "2026-06-29 03:28:25"
   }
 ]
