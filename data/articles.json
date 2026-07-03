@@ -1,5 +1,75 @@
 [
   {
+    "id": 143,
+    "_id64": "fdb626a89bb9ac71875790cdce9331cb041fb5b0c6ee36a6b05116a762148c40",
+    "title": "AI's Next Hundred-Billion-Dollar Market: Why the Answer Lies in Networking",
+    "summary": "For six years, China's GPU startups have surged on the AI tailwind, their valuations repeatedly resetting upward. The DPU, meanwhile, has been all but ignored.",
+    "category": "Business",
+    "thumbnail": "/asset/images/article_143/image_0.png",
+    "url": "/Business/143/",
+    "created_at": "2026-07-03 08:07:54"
+  },
+  {
+    "id": 146,
+    "_id64": "cadc05e4276de96fada57a0c2533f0939dfd8be5e84e46d9bb84acf5873f9dee",
+    "title": "Yingzhi XBOT Launches Universal Food-Service Robot Lineup with \"One Brain, Many Forms\" Embodied Intelligence Architecture",
+    "summary": "Leiphone (WeChat official account: Leiphone) reported that on June 30, Yingzhi XBOT held its \"2026 XBOT Universal Food-Service Embodied Robot Launch\" in Beijing. Built on four pillars — products, platform, commercial closed loop, and ecosystem openness — the company unveiled its proprietary embodied OS XOS 3.0, the AI Agent \"AiBao Store Manager,\" and three new embodied robots spanning coffee, ice cream, and full-scenario service. The three collectively deliver a \"One Brain, Many Forms\" intelligence architecture.",
+    "category": "Reports",
+    "thumbnail": "/asset/images/article_146/image_0.jpg",
+    "url": "/Reports/146/",
+    "created_at": "2026-07-03 08:07:54"
+  },
+  {
+    "id": 149,
+    "_id64": "d9961ef7fb0ae7e01d73c77491e429c2c522750e9ccf60357e2de9907cc7d16f",
+    "title": "Anthropic and OpenAI Stake Concurrent Claims in AI4S, as the Industry Pivots from Model Superiority to Ecosystem Capture",
+    "summary": "On June 30, Anthropic and OpenAI simultaneously entered the AI4S race. Anthropic unveiled Claude Science, a research agent workbench, with an explicit declaration that it 'does not rely on new models,' opting instead to bundle existing capabilities into workflows that encompass scientists' routine research. OpenAI introduced GeneBench-Pro, a benchmark spanning genomics, quantitative biology, and eight additional domains.",
+    "category": "Frontiers",
+    "thumbnail": "",
+    "url": "/Frontiers/149/",
+    "created_at": "2026-07-03 08:07:54"
+  },
+  {
+    "id": 142,
+    "_id64": "b71ee9b042ed95910cc70f90560b3a3fe94a70b5e59392d48c422b80ab424791",
+    "title": "Anthropic enacts mass account suspensions, drawing public backlash from prominent influencers.",
+    "summary": "Anthropic's sweeping account suspensions have drawn public outrage, even from prominent voices. Numerous users — including this author — have received Claude Code termination notices. Despite three months of uninterrupted use via an App Store subscription with no policy violations, Anthropic issued a summary termination two days ago without prior warning.",
+    "category": "Dev Hub",
+    "thumbnail": "/asset/images/article_142/image_0.jpg",
+    "url": "/Dev Hub/142/",
+    "created_at": "2026-07-02 08:20:41"
+  },
+  {
+    "id": 129,
+    "_id64": "87273727e0b29fddafbd434413c718b686941c4c5dd78ceef4d4d778ecea4cf7",
+    "title": "Agents That Improve Through Use: AReaL 2.0 Open-Sources a 'Growth System' for Intelligent Agents",
+    "summary": "On July 2, AReaL, the open-source reinforcement learning infrastructure project, launched version 2.0. The release targets Agents deployed in real-world business environments, delivering a system infrastructure that enables continuous learning during active use. Agents are now operating in production settings—writing code, retrieving information, invoking tools, and executing increasingly complex tasks across enterprise systems.",
+    "category": "Tools",
+    "thumbnail": "/asset/images/article_129/image_0.png",
+    "url": "/Tools/129/",
+    "created_at": "2026-07-02 08:08:42"
+  },
+  {
+    "id": 109,
+    "_id64": "70ec2ff72d538a68d26047c9e8dfa035676e5c29126fa302ce6d964fe1aa8030",
+    "title": "Anthropic Faces a Question: How Is Sonnet 5 Costing More Than Fable 5?",
+    "summary": "Anthropic's newly launched Sonnet 5 model maintains its nominal price, yet a tokenizer swap causes identical tasks to consume substantially more tokens, yielding an effective cost increase that, in some cases, surpasses Opus.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_109/image_0.webp",
+    "url": "/Frontiers/109/",
+    "created_at": "2026-07-01 07:31:33"
+  },
+  {
+    "id": 110,
+    "_id64": "5529c4795bf18c4b12834d10562ea3d78f095fa8f120c3d1c59de390295cf267",
+    "title": "Which Chinese Firm Can Rival Anthropic?",
+    "summary": "A three-dimensional comparison of Chinese AI firms against Anthropic — research, resources, and social influence — concludes that credibility is the unbridgeable chasm. Chinese AI must forge a value system beyond profits.",
+    "category": "Business",
+    "thumbnail": "/asset/images/article_110/image_0.jpg",
+    "url": "/Business/110/",
+    "created_at": "2026-07-01 07:31:33"
+  },
+  {
     "id": 96,
     "_id64": "fe6674cfcc57790b646b0745ddabc6ed95fb87760d97622f060d9f90a6b52ed8",
     "title": "After Nearly Eight Years, a Sudden Layoff: What Programmers Should Fear Most in the AI Era Isn't AI",
