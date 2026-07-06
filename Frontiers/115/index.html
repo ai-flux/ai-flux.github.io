@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="AI Flux">
+    
+<title>DeepSeek Unveils DSpark, Eliminating "Staccato" AI Responses - AI Flux &mdash; Curated Tech Intelligence</title>
+<meta name="description" content="DeepSeek, in collaboration with Peking University, introduced DSpark, an inference acceleration framework leveraging a semi-autoregressive draft model and confidence-scheduled verification, yielding a 57%-85% improvement in per-user generation throughput online." />
+<link rel="canonical" href="https://ai-flux.top/Frontiers/115/" />
+<meta property="og:title" content="DeepSeek Unveils DSpark, Eliminating "Staccato" AI Responses" />
+<meta property="og:description" content="DeepSeek, in collaboration with Peking University, introduced DSpark, an inference acceleration framework leveraging a semi-autoregressive draft model and confidence-scheduled verification, yielding a 57%-85% improvement in per-user generation throughput online." />
+<meta property="og:image" content="https://ai-flux.top/assets/default_og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "DeepSeek Unveils DSpark, Eliminating "Staccato" AI Responses",
+  "description": "DeepSeek, in collaboration with Peking University, introduced DSpark, an inference acceleration framework leveraging a semi-autoregressive draft model and confidence-scheduled verification, yielding a 57%-85% improvement in per-user generation throughput online.",
+  "image": "https://ai-flux.top/assets/default_og.jpg",
+  "datePublished": "2026-07-01T07:31:33Z"
+}
+</script>
+
+    <link rel="stylesheet" href="../../assets/css/style.css?v=2">
+        <!-- ===== 统计代码钩子（由 config.yaml 驱动） ===== -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XGDSPRE0L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-0XGDSPRE0L');
+    </script>
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?85296c1ac38b768654710957114c951f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+    
+    <script>console.log('Custom analytics loaded');
+</script>
+    
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                <div class="site-title"><a href="../../">AI Flux</a></div>
+                <div class="header-nav">
+                    <a href="../../about/">About</a>
+                    <span class="header-nav-sep">|</span>
+                    <a href="../../contact/">Contact</a>
+                </div>
+            </div>
+        </header>
+        <nav class="category-nav">
+            <div class="container" style="display:flex;gap:24px;">
+                <a href="../../" class="">Home</a>
+                
+                <a href="../../?category=Frontiers" class="active">Frontiers</a>
+                
+                <a href="../../?category=Deep Reads" class="">Deep Reads</a>
+                
+                <a href="../../?category=Business" class="">Business</a>
+                
+                <a href="../../?category=Dev Hub" class="">Dev Hub</a>
+                
+                <a href="../../?category=Tools" class="">Tools</a>
+                
+                <a href="../../?category=Reports" class="">Reports</a>
+                
+            </div>
+        </nav>
+        
+<main><div class="container">
+    <article class="article-detail">
+        <h1>DeepSeek Unveils DSpark, Eliminating "Staccato" AI Responses</h1>
+        <div class="meta">
+            <span class="category-tag" style="display:inline-block;background:var(--wsj-accent);color:white;font-family:var(--wsj-font-sans);font-size:11px;font-weight:600;padding:2px 10px;border-radius:12px;text-transform:uppercase;letter-spacing:0.5px;margin-right:12px;">Frontiers</span>
+            <span>Jul 1, 2026</span>
+        </div>
+        <div id="tab-content-wall_street" class="tab-content">
+            
+                
+                    
+                <p>DeepSeek, amid its aggressive hiring spree, has remained unwavering in its open-source commitment.</p>
+                    
+                
+                    
+                <p>Today, DeepSeek, in partnership with Peking University researchers, released a paper entitled "DSpark: Confidence-Scheduled Speculative Decoding with Semi-Autoregressive Generation," introducing a novel inference acceleration framework for large language models.</p>
+                    
+                
+                    
+                <p>▲ Technical report 🔗 https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf</p>
+                    
+                
+                    
+                <p>The paper disclosed that DSpark has been integrated into the production engines of DeepSeek-V4-Flash preview and DeepSeek-V4-Pro preview, supplanting the prior MTP-1 baseline.</p>
+                    
+                
+                    
+                <p>Under real-world production traffic and equivalent total system throughput, DSpark improved per-user generation speed by 60%-85% on DeepSeek-V4-Flash and 57%-78% on DeepSeek-V4-Pro.</p>
+                    
+                
+                    
+                <p>What enabled such dramatic acceleration in DeepSeek's inference engine? Admittedly, the material that follows is dense; interested readers are encouraged to proceed.</p>
+                    
+                
+                    
+                <p>The era of plodding, token-by-token AI generation has long frustrated users.</p>
+                    
+                
+                    
+                <p>Why do large-model responses always feel agonizingly slow? The explanation is straightforward.</p>
+                    
+                
+                    
+                <p>Mainstream language models employ autoregressive generation by default: each new token requires a forward pass conditioned on its predecessors, so longer outputs incur more decoding steps and compounding latency.</p>
+                    
+                
+                    
+                <p>In high-interaction contexts—real-time chat, multi-turn agent workflows, and code assistants—generation speed directly shapes user experience and GPU efficiency.</p>
+                    
+                
+                    
+                <p>Speculative decoding was developed precisely to address this bottleneck.</p>
+                    
+                
+                    
+                <p>▲ For readability, the image is AI-generated and for reference only.</p>
+                    
+                
+                    
+                <p>The concept mirrors a two-stage pipeline: a lightweight draft model produces a sequence of candidate tokens, after which the target model—responsible for output quality—verifies them in a single forward pass.</p>
+                    
+                
+                    
+                <p>Accepted tokens are retained; upon rejection, all subsequent candidates are discarded and the target model generates a correction. Since verification can be parallelized, speculative decoding accelerates generation without altering the target model's output distribution.</p>
+                    
+                
+                    
+                <p>More intuitively, it enables the large model to validate multiple tokens per forward pass, rather than one at a time.</p>
+                    
+                
+                    
+                <p>Speculative decoding has emerged as a critical direction for LLM inference acceleration, yet existing approaches face notable constraints.</p>
+                    
+                
+                    
+                <p>The first category comprises autoregressive draft models.</p>
+                    
+                
+                    
+                <p>Such models generate candidate content autoregressively, one token at a time, similar to a standard language model. The benefit is superior coherence and draft quality; the drawback is that the draft phase itself is sequential—longer candidate blocks incur proportionally higher drafting latency.</p>
+                    
+                
+                    
+                <p>The second category is parallel draft models.</p>
+                    
+                
+                    
+                <p>These models generate multiple candidate tokens in a single step, offering speed and suitability for longer candidate blocks. The trade-off is that tokens within a block lack sufficient inter-token dependency.</p>
+                    
+                
+                    
+                <p>▲ For readability, the image is AI-generated and for reference only.</p>
+                    
+                
+                    
+                <p>The paper offers a concrete illustration: given a context where both 'of course' and 'no problem' are plausible continuations, a parallel draft model—lacking sequential generation—may conflate the two paths, yielding incoherent outputs such as 'of problem' or 'no course'.</p>
+                    
+                
+                    
+                <p>Consequently, the initial tokens produced by a parallel draft model tend to be reasonable, but acceptance probability declines sharply further into the sequence—a phenomenon the paper terms 'suffix decay.'</p>
+                    
+                
+                    
+                <p>A more immediate challenge arises in production environments.</p>
+                    
+                
+                    
+                <p>Parallel draft models readily produce lengthy candidate sequences, yet in real-world high-concurrency services, submitting all those tokens to the target model for verification may prove uneconomical.</p>
+                    
+                
+                    
+                <p>For structured tasks such as mathematics and code generation, the solution path is comparatively determinate, making candidate tokens more likely to be accepted. In open-ended chat, where uncertainty is higher, trailing tokens face a greater rejection probability.</p>
+                    
+                
+                    
+                <p>When the system is idle, additional verification incurs minimal cost; under load, verifying tokens with high rejection probability consumes batch capacity and degrades service for other requests.</p>
+                    
+                
+                    
+                <p>In effect, the challenge of speculative decoding has shifted from merely generating more tokens per iteration to selectively determining which tokens merit target-model verification.</p>
+                    
+                
+                    
+                <p>How DSpark Achieves 'Both Speed and Selectivity'</p>
+                    
+                
+                    
+                <p>DSpark's strategy can be distilled into two objectives: better draft coherence and more selective verification.</p>
+                    
+                
+                    
+                <p>On the generation side, DSpark employs a semi-autoregressive architecture.</p>
+                    
+                
+                    
+                <p>It retains the parallel draft model backbone—keeping the bulk of computation in a single pass—while appending a lightweight sequential module at the output stage, enabling later tokens to condition on their predecessors.</p>
+                    
+                
+                    
+                <p>Conceptually, candidates are first laid out rapidly in parallel, after which a lightweight sequential module verifies inter-token transitions.</p>
+                    
+                
+                    
+                <p>The paper adopts a Markov head by default and evaluates an RNN head as an alternative. The Markov head models adjacent token transitions with low computational overhead and simpler deployment; the RNN head captures longer intra-block dependencies at the cost of added complexity and marginal returns.</p>
+                    
+                
+                    
+                <p>Thus, the Markov head is selected as the default configuration.</p>
+                    
+                
+                    
+                <p>The architectural objective is unambiguous: preserve parallel draft model speed while recovering sequential coherence characteristic of autoregressive draft models.</p>
+                    
+                
+                    
+                <p>On the verification side, DSpark introduces confidence-scheduled verification.</p>
+                    
+                
+                    
+                <p>The system assigns a confidence score to each candidate position, reflecting the probability that the current token will be accepted by the target model conditional on all prior tokens having been accepted.</p>
+                    
+                
+                    
+                <p>Subsequently, a hardware-aware prefix scheduler determines per-request verification length based on three factors: current system load, per-position confidence scores, and the engine's throughput curve across varying batch sizes.</p>
+                    
+                
+                    
+                <p>Consequently, DSpark avoids rigid, fixed-length candidate block verification.</p>
+                    
+                
+                    
+                <p>Under loose resource constraints, it verifies a longer prefix to maximize valid tokens per target-model forward pass. As load increases, it truncates verification for low-confidence requests, preserving target-model batch capacity.</p>
+                    
+                
+                    
+                <p>This distinction marks DSpark's divergence from conventional speculative decoding and its alignment with real production constraints: it optimizes not only for candidate length but also for verification budget allocation under variable load.</p>
+                    
+                
+                    
+                <p>Large Model Optimization Is Ultimately a Systems Engineering Challenge</p>
+                    
+                
+                    
+                <p>Offline evaluations benchmarked DSpark against four target models—Qwen3-4B, Qwen3-8B, Qwen3-14B, and Gemma4-12B—with two representative baselines: the autoregressive draft model Eagle3 and the parallel draft model DFlash.</p>
+                    
+                
+                    
+                <p>Evaluation spans three domains—mathematical reasoning, code generation, and general chat—across benchmarks including GSM8K, MATH500, AIME25, MBPP, HumanEval, Live-CodeBench, MT-Bench, Alpaca, and Arena-Hard.</p>
+                    
+                
+                    
+                <p>Results indicate that on Qwen3-4B, Qwen3-8B, and Qwen3-14B, DSpark improves macro-average accepted length by 30.9%, 26.7%, and 30.0% relative to Eagle3, and by 16.3%, 18.4%, and 18.3% relative to DFlash. DSpark also maintains an advantage on Gemma4-12B.</p>
+                    
+                
+                    
+                <p>Accepted length represents the average number of tokens accepted by the target model per speculative decoding round. A higher value indicates stronger alignment between the draft and target models, and thus greater acceleration headroom.</p>
+                    
+                
+                    
+                <p>The paper further notes substantial task-level variance. On Qwen3-4B, DSpark attains an average accepted length of 5.57 on math, 5.12 on code, and 3.49 on chat.</p>
+                    
+                
+                    
+                <p>Math and code are more structured, yielding more deterministic continuation paths; chat is inherently open-ended, with numerous valid responses. Consequently, candidate tokens of identical length carry unequal value across tasks, and a fixed verification length would misallocate computational resources.</p>
+                    
+                
+                    
+                <p>Additional ablation studies elucidate why DSpark proves effective.</p>
+                    
+                
+                    
+                <p>Parallel draft models such as DFlash excel on the initial candidate token, leveraging deeper networks for single-pass generation. Beyond the first token, however, the absence of intra-block dependency causes acceptance rates to decline more steeply.</p>
+                    
+                
+                    
+                <p>Autoregressive draft models like Eagle3 deliver superior coherence in later positions by virtue of sequential generation. However, to contain drafting latency, their depth is constrained, capping predictive capability on the first token.</p>
+                    
+                
+                    
+                <p>DSpark occupies a middle ground. It inherits robust first-token prediction from parallel draft models while employing the sequential module to mitigate suffix decay on trailing tokens.</p>
+                    
+                
+                    
+                <p>Architecture ablations corroborate this finding: a 2-layer DSpark already outperforms a 5-layer DFlash, indicating that lightweight sequential modeling is more efficient than simply stacking additional parallel layers.</p>
+                    
+                
+                    
+                <p>As proposal length scales from 4 to 16, DSpark's margin over DFlash widens accordingly. At maximum length, DSpark surpasses DFlash by 30% on math, 26% on code, and 22% on chat.</p>
+                    
+                
+                    
+                <p>Latency overhead from the sequential module is minimal. At batch size 128, DSpark's per-round latency increases by only 0.2%-1.3% relative to DFlash, while accepted length improves by as much as 30%.</p>
+                    
+                
+                    
+                <p>The confidence module was validated in isolation. The paper conducted a confidence threshold sweep on Qwen3-4B, progressively raising the bar and observing which tokens the system retains.</p>
+                    
+                
+                    
+                <p>The results are unequivocal: a higher threshold filters out more low-value candidates, driving overall acceptance rates upward. Chat exhibits the most pronounced shift—from 45.7% to 95.7%; math from 76.9% to 92.5%; and code from 67.6% to 92.0%.</p>
+                    
+                
+                    
+                <p>The online deployment results are even more consequential.</p>
+                    
+                
+                    
+                <p>DeepSeek deployed DSpark in the production engines of DeepSeek-V4-Flash preview and DeepSeek-V4-Pro preview, with a maximum draft length of 5, benchmarked against the prior MTP-1 production baseline.</p>
+                    
+                
+                    
+                <p>MTP-1 predicts a single token per step, yielding limited acceleration headroom while maintaining safety under high concurrency. The rationale: although static multi-token draft generates more tokens per pass, widespread rejections waste target-model verification resources and degrade total system throughput.</p>
+                    
+                
+                    
+                <p>DSpark's contribution is rendering multi-token draft tractable under genuine production traffic.</p>
+                    
+                
+                    
+                <p>Under moderate concurrency, DSpark extends the verification budget from MTP-1's static 2 tokens to roughly 4-6 tokens, enabling each forward pass to yield more useful output.</p>
+                    
+                
+                    
+                <p>As concurrency rises and the target model approaches saturation, DSpark automatically reduces verification length, curtailing the impact of low-confidence tokens on batch capacity.</p>
+                    
+                
+                    
+                <p>In production tests targeting 80 tokens/s/user on V4-Flash, DSpark delivered a 51% improvement in total system throughput over MTP-1.</p>
+                    
+                
+                    
+                <p>At the more stringent 120 tokens/s/user target, MTP-1 was nearing its capacity ceiling; DSpark produced a nominal throughput gain of 661%.</p>
+                    
+                
+                    
+                <p>The 661% figure should not be construed as a 6x gain across all routine scenarios. Rather, under high-interaction workloads with stringent SLA constraints, MTP-1 struggles to maintain service, while DSpark accesses a previously unattainable performance regime.</p>
+                    
+                
+                    
+                <p>V4-Pro exhibits a similar trajectory. At 35 tokens/s/user, DSpark boosts total throughput by 52%; at the stricter 50 tokens/s/user target, the nominal throughput advantage reaches 406%. Under equivalent system capacity, DSpark improves V4-Pro's per-user generation speed by 57%-78%.</p>
+                    
+                
+                    
+                <p>The denouement follows a familiar pattern.</p>
+                    
+                
+                    
+                <p>DeepSeek additionally announced it is open-sourcing DSpark model weights, including checkpoints for DeepSeek-V4-Flash preview and DeepSeek-V4-Pro preview. Concurrently, it open-sourced DeepSpec, a code library for speculative decoding training encompassing Eagle3, DFlash, and DSpark.</p>
+                    
+                
+                    
+                <p>▲🔗 https://github.com/deepseek-ai/DeepSpec</p>
+                    
+                
+                    
+                <p>In short, large-model inference acceleration has transcended model architecture and become, increasingly, a system scheduling challenge.</p>
+                    
+                
+                    
+                <p>Generating more tokens per draft pass does not guarantee faster service. Candidate quality, acceptance rate, verification length, system load, and throughput targets—each variable exerts subtle, interdependent influence.</p>
+                    
+                
+                    
+                <p>Large-model competition is entering a more granular phase. Building stronger models remains the foundational imperative, but the speed, cost, and reliability with which a model reaches real users will equally define an AI product's ceiling.</p>
+                    
+                
+                    
+                <p>By open-sourcing its production-proven acceleration methodology, DeepSeek is, in effect, sharing with the entire industry the core techniques that genuinely boost inference efficiency and lower service costs—without reservation.</p>
+                    
+                
+                    
+                <p>The lesson is clear: emulate DeepSeek's openness, not OpenAI's guardedness.</p>
+                    
+                
+                    
+                <p>
+</p>
+                    
+                
+            
+        </div>
+    </article>
+</div></main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <span class="footer-copy">&copy; 2026 AI Flux &mdash; Curated Tech Intelligence &middot; Professional Translation</span>
+                <span class="footer-page-links">
+                    <a href="../../about/">About</a>
+                    <a href="../../contact/">Contact</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
