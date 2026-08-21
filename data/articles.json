@@ -1,5 +1,75 @@
 [
   {
+    "id": 251,
+    "_id64": "181d7c47a3dfd7bd56f75f50eb824ea01a6551eb66a093690f7a11b48b8789d3",
+    "title": "Cloudflare Computer Unveiled: Persistent Execution Environments for AI Agents",
+    "summary": "Cloudflare has released Cloudflare Computer as an open-source runtime, delivering lightweight, dormant-capable, state-persistent execution environments for AI agents via isolates. Scheduling occurs on demand across isolates, containers, or browsers, with the majority of workloads requiring no container. Task migration is enabled by a SQLite-based shared file system; the offering remains in early preview.",
+    "category": "Tools",
+    "thumbnail": "",
+    "url": "/Tools/251/",
+    "created_at": "2026-08-15 16:11:11"
+  },
+  {
+    "id": 253,
+    "_id64": "e167b8e2e18950ca0a4040c486c38d9ccaede2b967118aa2e9bc5b322a3d57f3",
+    "title": "Public Showdown Erupts Between Codex and Claude Code Leadership",
+    "summary": "A developer account suspension triggered a public confrontation between the heads of OpenAI's and Anthropic's coding agent products. After Tibo publicly instructed developers on injecting GPT-5.6 Sol into Claude Code, followers were suspended; Boris clarified that model substitution would not incur enforcement, restored the affected account, and saw a public recruiting overture declined. Competitive attention has shifted to the harness.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_253/image_0.png",
+    "url": "/Frontiers/253/",
+    "created_at": "2026-08-15 16:11:11"
+  },
+  {
+    "id": 254,
+    "_id64": "17964b04ed3fbf5bc34134b708f7c699868bbb4b39ad0750ca34bf8716f70293",
+    "title": "Claude Code: No Magic Involved",
+    "summary": "In her NDC presentation, Daisy Hollman of Anthropic's Claude Code team deconstructed agent mechanics. Tool invocation and context were identified as central; customization was characterized as knowledge; hooks were deemed the only scalable plugin abstraction. Multi-agent workflows—worktrees, /loop, and auto mode—were demonstrated, with 2026 anticipated to center on extracting information from models.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_254/image_0.png",
+    "url": "/Frontiers/254/",
+    "created_at": "2026-08-15 16:11:11"
+  },
+  {
+    "id": 255,
+    "_id64": "3d869ba80f13caca3fad11f97f23bba8c2e1ba20e1dc0ceaf55170d91700a060",
+    "title": "DeepSeek Releases Harness as Open Source, With Models, Tools, and Agent Loop Built as Plugins",
+    "summary": "DeepSeek has opened Harness v0.1 to developers under the MIT license. Built on the principle that 'everything is a plugin' — models, tools, skills, sessions, sandboxes, storage, Agent Loop, scheduling, and UI are all replaceable and assembled by Cordis — the preview ships four operating modes and multi-agent orchestration, with an append-only log underpinning observability and replay. Its prospects will be decided by the plugin ecosystem.",
+    "category": "Tools",
+    "thumbnail": "",
+    "url": "/Tools/255/",
+    "created_at": "2026-08-15 16:11:11"
+  },
+  {
+    "id": 256,
+    "_id64": "4cb89367eb7f643b69584b3ade1af904c2d93776ddeb2ce610a339061c1c49b2",
+    "title": "DeepSeek + Pi Outperforms Claude Code? Pi Founder: This Pairing Was Anticipated",
+    "summary": "Per Composio's benchmark, DeepSeek V4 Flash completed 30 tasks across eight harnesses; a minimally configured Pi led at 66.7% success, at roughly one-seventh of Claude Code's cost. Analysis centers on the 'harness multiplier effect': optimized prefix caching lifted hit rates to 99.9% and reduced costs by 98%.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_256/image_0.jpeg",
+    "url": "/Frontiers/256/",
+    "created_at": "2026-08-15 16:11:11"
+  },
+  {
+    "id": 257,
+    "_id64": "54c8314a2c1b6096622588e989e49b011fe6d4a2903515a0d54ffac14921204d",
+    "title": "Rust Codifies New Rules for AI Coding: AI May Review, but Not Author; Excessive Use Trips a 'Circuit Breaker'",
+    "summary": "Five Rust teams have codified an LLM policy: models may answer, analyze, review, and translate, but may not 'create' code, documentation, or diagnostics. Authorized AI-assisted changes require a designated reviewer, avoidance of critical code, and disclosure; new contributors are restricted. When LLM-created PRs account for more than half of merges in any six-week period, merging is suspended — a circuit breaker contrasting with Zig's outright prohibition.",
+    "category": "Dev Hub",
+    "thumbnail": "/asset/images/article_257/image_0.jpeg",
+    "url": "/Dev Hub/257/",
+    "created_at": "2026-08-15 16:11:11"
+  },
+  {
+    "id": 195,
+    "_id64": "c12ee4c1db0e1344e1ac177ae08779b53d549a368d33ab3bf446852452d16f83",
+    "title": "Ant LingBot Debuts LingBot-Depth 2.0: A Spatial Perception Model Trained on 150 Million Samples, Achieving Sharper Vision and Greater Precision",
+    "summary": "On July 7, LingBot Technology — the embodied-intelligence arm of Ant Group — unveiled LingBot-Depth 2.0, a spatial perception model trained on a 150-million-sample dataset. Improvements span edge sharpness, fine-object detection, long-distance depth estimation, and robustness under complex scenes. LingBot-Depth, LingBot's proprietary spatial perception model, functions as a robot's vision system in physical environments...",
+    "category": "Tools",
+    "thumbnail": "/asset/images/article_195/image_0.png",
+    "url": "/Tools/195/",
+    "created_at": "2026-07-07 05:39:34"
+  },
+  {
     "id": 152,
     "_id64": "c670e460075d40828c4763b4a704bfc82edffe654330c18bf0472171002f93a0",
     "title": "Why Google Has Faltered in AI Coding",

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="AI Flux">
+    
+<title>Claude Code: No Magic Involved - AI Flux &mdash; Curated Tech Intelligence</title>
+<meta name="description" content="In her NDC presentation, Daisy Hollman of Anthropic's Claude Code team deconstructed agent mechanics. Tool invocation and context were identified as central; customization was characterized as knowledge; hooks were deemed the only scalable plugin abstraction. Multi-agent workflows—worktrees, /loop, and auto mode—were demonstrated, with 2026 anticipated to center on extracting information from models." />
+<link rel="canonical" href="https://ai-flux.top/Frontiers/254/" />
+<meta property="og:title" content="Claude Code: No Magic Involved" />
+<meta property="og:description" content="In her NDC presentation, Daisy Hollman of Anthropic's Claude Code team deconstructed agent mechanics. Tool invocation and context were identified as central; customization was characterized as knowledge; hooks were deemed the only scalable plugin abstraction. Multi-agent workflows—worktrees, /loop, and auto mode—were demonstrated, with 2026 anticipated to center on extracting information from models." />
+<meta property="og:image" content="https://ai-flux.top/asset/images/article_254/image_0.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Claude Code: No Magic Involved",
+  "description": "In her NDC presentation, Daisy Hollman of Anthropic's Claude Code team deconstructed agent mechanics. Tool invocation and context were identified as central; customization was characterized as knowledge; hooks were deemed the only scalable plugin abstraction. Multi-agent workflows—worktrees, /loop, and auto mode—were demonstrated, with 2026 anticipated to center on extracting information from models.",
+  "image": "https://ai-flux.top/asset/images/article_254/image_0.png",
+  "datePublished": "2026-08-15T16:11:11Z"
+}
+</script>
+
+    <link rel="stylesheet" href="../../assets/css/style.css?v=2">
+        <!-- ===== 统计代码钩子（由 config.yaml 驱动） ===== -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XGDSPRE0L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-0XGDSPRE0L');
+    </script>
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?85296c1ac38b768654710957114c951f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+    
+    <script>console.log('Custom analytics loaded');
+</script>
+    
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                <div class="site-title"><a href="../../">AI Flux</a></div>
+                <div class="header-nav">
+                    <a href="../../about/">About</a>
+                    <span class="header-nav-sep">|</span>
+                    <a href="../../contact/">Contact</a>
+                </div>
+            </div>
+        </header>
+        <nav class="category-nav">
+            <div class="container" style="display:flex;gap:24px;">
+                <a href="../../" class="">Home</a>
+                
+                <a href="../../?category=Frontiers" class="active">Frontiers</a>
+                
+                <a href="../../?category=Deep Reads" class="">Deep Reads</a>
+                
+                <a href="../../?category=Business" class="">Business</a>
+                
+                <a href="../../?category=Dev Hub" class="">Dev Hub</a>
+                
+                <a href="../../?category=Tools" class="">Tools</a>
+                
+                <a href="../../?category=Reports" class="">Reports</a>
+                
+            </div>
+        </nav>
+        
+<main><div class="container">
+    <article class="article-detail">
+        <h1>Claude Code: No Magic Involved</h1>
+        <div class="meta">
+            <span class="category-tag" style="display:inline-block;background:var(--wsj-accent);color:white;font-family:var(--wsj-font-sans);font-size:11px;font-weight:600;padding:2px 10px;border-radius:12px;text-transform:uppercase;letter-spacing:0.5px;margin-right:12px;">Frontiers</span>
+            <span>Aug 15, 2026</span>
+        </div>
+        <div id="tab-content-wall_street" class="tab-content">
+            
+                
+                    
+                <p>Coding agents improved dramatically over the past year, and expectations rose accordingly. Context-window capacity, by contrast, has remained largely static: one million tokens approximated the state of the art a year ago and does so today. With agents now routinely operating at monorepo scale, fitting ever-greater volumes of information into fixed context limits has become a full-time engineering discipline.</p>
+                    
+                
+                    
+                <p>Daisy Hollman, a veteran engineer who devoted nearly a decade to the C++ standards committee—including two years as its chair—currently leads plugin and agent design at Anthropic's Claude Code. Her NDC Copenhagen address detailed the design of Claude Code plugins, the context-engineering primitives they embody, and Anthropic's internal multi-agent workflows. This article was compiled by InfoQ from the presentation's video.</p>
+                    
+                
+                    
+                <p>Key points were as follows:</p>
+                    
+                
+                    
+                <p>Claude cannot perform one's work alongside a human unless it can perform everything that human can. Granting the model access to the information required for the job enables it to execute that work better, or in concert with its human counterpart. The objective is not self-replacement but self-multiplication.</p>
+                    
+                
+                    
+                <p>Customization constitutes knowledge; it bridges the divide between the model's inherent knowledge and that of the organization.</p>
+                    
+                
+                    
+                <p>Hooks are the sole plugin abstraction that genuinely scales. Content is injected solely upon trigger; absent a match, nothing enters the context.</p>
+                    
+                
+                    
+                <p>The defining shift of 2026 will be from information input to the model toward information delivered from the model to the user. Human attention constitutes the system's smallest container.</p>
+                    
+                
+                    
+                <p>From Chatbot to Agent</p>
+                    
+                
+                    
+                <p>Early LLMs were deployed as chatbots. The interaction loop was straightforward: a human utterance was met by a model response, followed by another human utterance, and so on, indefinitely.</p>
+                    
+                
+                    
+                <p>Tool calling emerged in 2024, enabling models to request actions of a computer. Initially, a model could execute an operation, receive output, and decide on the basis of that result before returning to the human. Tools were progressively added; a second call could be predicated on the first, then a third. At some juncture, a threshold was crossed, and the entities were renamed agents. The term thus traces its origin: from zero tool calls, to one, to many, to sufficient autonomy that the designation 'agent' was conferred.</p>
+                    
+                
+                    
+                <p>Coding agents—or agentic coding harnesses, such as Claude Code, Codex, and Cursor—are agents in substance, distinguished only by their toolset: the tools of an ordinary programmer. File editing, CI tooling, code execution, and compilation—largely reducible to shell commands—collectively confer upon the agent the capabilities of a programmer.</p>
+                    
+                
+                    
+                <p>Tool calling, in truth, remains shockingly primitive. The model is informed that it may write JSON; upon writing a specific JSON structure, an action is triggered; the action's result is then returned to the model, inserted at the head of its context window. The mechanism is no more complex than that. A bash command is executed in precisely this manner: the model designates bash as the tool and supplies the command; the harness executes it and deposits the output in a tool-result block. Every element of an agentic harness is organized around this loop—acting on output, generating a subsequent call, repeating—which constitutes the essence of an agent.</p>
+                    
+                
+                    
+                <p>The edit tool is the workhorse that makes coding agents function; the literal schema from Claude Code is reproduced above. These slides, incidentally, were generated entirely by Claude Code. When this artifact was requested, the instruction was simply: "Can you place a tool call from your system prompt here?" The model was required to supply the old string, the file name, and the new string—a find-and-replace, devoid of cursor, selection, or quote escaping, with the old string required to match byte for byte. Multiple occurrences demanded either an advance declaration of expected matches or an outright failure. These tools are exceptionally primitive, and substantial room for iteration plainly remains. [IMAGE:0]</p>
+                    
+                
+                    
+                <p>Given that Claude authored these slides, the tool call that generated the previous slide is instructive: it produced JSON containing nested JSON that referenced the prior slide. The model's performance was remarkable—not a single token was incorrect throughout, a result that remained incongruent with my mental model of agent strengths and weaknesses. Character-by-character authorship of this kind is beyond human capability, and thus offers a subtle gauge of what agents do and where their aptitudes and limitations lie. The output was produced without difficulty, error, or retry. String-replacement or edit-tool errors were last observed in approximately February or April 2025; models have decisively outgrown that stage, as such behavior is readily trainable. [IMAGE:1]</p>
+                    
+                
+                    
+                <p>Because models can absorb such complexity, tool calls can be made progressively more elaborate, enabling increasingly complex operations and, consequently, longer-horizon tasks.</p>
+                    
+                
+                    
+                <p>A chart from METR, an AI research institute, has been dubbed Moore's law for agents: the task horizon achievable at a 50 percent success rate has approximately doubled every four months. The trend began to plateau earlier this year. Opus 4.7 and 4.8 were excluded because the institute determined that, beyond Opus 4.6, the margin of error defining a '16-hour task' had grown too large for the chart to remain meaningful. Over the preceding three years, however, the trend had proven remarkably stable. [IMAGE:2]</p>
+                    
+                
+                    
+                <p>One might assume, reasonably, that the trend will eventually plateau—and it will. Yet betting on Moore's-law saturation in the 1970s or 1980s would have left one in a markedly different position than those who declined the wager. It is at least worth considering that this trajectory persists for another one to two years. The capacity of exponential trends to reshape how work is performed defies easy imagination.</p>
+                    
+                
+                    
+                <p>In April, the Mozilla Foundation released a chart documenting the volume of security vulnerabilities and defects remediated that month with our latest model—a figure exceeding their combined total of the preceding 15 months. AI tooling was not absent during that period; the delta is attributable to the new generation of tools. [IMAGE:3]</p>
+                    
+                
+                    
+                <p>A hypothesis is therefore proposed: if agents write superior code, what becomes of engineering? Once a devotee of C++ metaprogramming minutiae, and once profoundly proud of my own coding, I have been persuaded by eighteen months at Anthropic that such concerns are immaterial. Proceeding from that premise: what form would agentic programming take? What form would harness design take? How must context engineering be conducted for such a system to govern monorepo-scale software projects?</p>
+                    
+                
+                    
+                <p>The Rationale for Customization</p>
+                    
+                
+                    
+                <p>Why, it must first be asked, is model customization necessary? If progress toward so-called AGI is assumed, the model should be generally intelligent. Why, then, would instruction from a human remain necessary?</p>
+                    
+                
+                    
+                <p>First, it requires access to the resources necessary for its work. Second, it requires command of the institutional knowledge available to any employee of the organization. Third, it must possess the tools with which to obtain them.</p>
+                    
+                
+                    
+                <p>The central thesis: Claude cannot work alongside a human it cannot fully emulate. Out of the box, it perceives only a repository and a shell. By default, it is confined to the directory in which it was launched—a security measure of sound rationale—yet no professional software engineer would declare an intention to disregard all information beyond that directory for a working day.</p>
+                    
+                
+                    
+                <p>Such constraints suffice for zero-to-one projects, and plausibly explain why success is more readily observed there—in part because such projects are objectively easier, even for human engineers, and in part because the restricted context and imposed boundaries disadvantage the agent more severely. Rarely is this sufficient for high-quality software engineering at genuine scale.</p>
+                    
+                
+                    
+                <p>A further point is insufficiently appreciated: the greater part of professional software engineering does not reside in source code. Programming concerns source code; software engineering extends well beyond it. Granting the model access to the information required for one's work enables it to perform that work better, or in concert with its human counterpart. The objective is not self-replacement but self-multiplication.</p>
+                    
+                
+                    
+                <p>Where, precisely, does one's work reside, and where are decisions made? Decisions are not, as a rule, made in source code—unless the engineering environment differs markedly from the familiar. Team chat, CI for detecting breakage, dashboards for production status, internal and design documentation—these constitute the actual terrain. The recommendation: spend a day working outside the terminal. If a task cannot be completed by the engineer, it cannot be completed jointly with Claude. A Slack message that cannot be answered by instructing Claude what to say is a message Claude cannot answer or act upon. A CI failure requiring manual copy-paste into a prompt is work performed on the model's behalf—work it is then incapable of performing.</p>
+                    
+                
+                    
+                <p>The term 'knowledge' tends to be over-read as 'simply absent from the training data.' In reality, certain knowledge is untrainable, as practices vary by organization: codebase conventions, institutional memory, initiatives attempted and abandoned two quarters prior. Even a perfectly trained model would require a mechanism for accessing such non-public information—developments from the past week, for instance, against a model's training cutoff. Certain knowledge is exclusively proprietary: internal APIs, internal vocabulary, terminology definitions embedded in codebases and design documents, and the means of locating them. Customization, therefore, is knowledge; it bridges the divide between the model's inherent knowledge and that of the organization.</p>
+                    
+                
+                    
+                <p>The fashionable term for this phenomenon is in-context learning, which is, in substance, text files. Model weights are frozen at release; they are not subject to modification. With fine-tuning interfaces and APIs having contracted of late, external fine-tuning has correspondingly diminished. Nearly all customization will occur at the textual level—a fortunate fact, given that programmers' proficiency lies precisely in text manipulation. No knowledge of the mathematics underlying LLM weights, or of the underlying mechanisms, is required; only the manipulation of text. Inputs are altered; outputs change. The process is not deterministic, yet output can be improved through deliberate input modification.</p>
+                    
+                
+                    
+                <p>Claude's current tool-calling paradigm approximates the Unix `ed` editor—the most rudimentary subset of `vi`'s functionality. Were all editing confined to find-and-replace, that would approximate the present state of agentic tooling.</p>
+                    
+                
+                    
+                <p>The question of Claude's ideal IDE, and of the model's ideal real-time feedback, remains unresolved. The vast chasm between `ed` or raw `vi` and VS Code constitutes the opportunity, and it exists entirely within text space—a prospect of considerable promise. Information is not fed back into the weights to prevent coding errors; text, quite literally, is fed back to the model.</p>
+                    
+                
+                    
+                <p>The illustrative question: what form should the agent's red squiggle take? How does an agent detect error in a tool call, as a human detects an erroneous edit? A nonexistent variable, or an invalid reference in context, yields a red squiggle for the human. Models, however, receive plain text; rich-text feedback is unavailable, as is real-time feedback during composition. The mechanism, therefore, must be constructed.</p>
+                    
+                
+                    
+                <p>Claude Code's mechanism is the post-tool-use hook: upon execution of a tool call such as those demonstrated, supplied information is appended as part of the tool-response block. The crucial point is that such information is already producible—the codebase already generates it, having long served hover-over red-squiggle inspection. The text already exists.</p>
+                    
+                
+                    
+                <p>The nudge is delivered at the moment of error, preempting the more token-expensive realization that would otherwise surface at compile time. The space admits considerable content: type checking, linting, flagging of obligations stated in CLAUDE.md that went unperformed. The fastest route to improved agent performance in a codebase is not necessarily a more capable model but a tighter feedback loop—early error notification, and the requisite scripts are, for the most part, already in existence. [IMAGE:4]</p>
+                    
+                
+                    
+                <p>Tools are of two kinds: those compensating for limited intelligence, and those scaling with intelligence—a distinction that applies to humans and models alike. Junior engineers may be furnished with tools restricting file edits, modifications, and command execution; promotion to seniority, and the attendant trust, demands a new toolset. A tool that delivers nudges or reminders, however, transcends levels: senior engineers are known to err occasionally, while retaining the judgment to recognize false positives. Tool-building for agents, therefore, should be directed at the second category—accounting not only for present model capabilities but for capabilities two generations hence.</p>
+                    
+                
+                    
+                <p>The Context Window as a Box</p>
+                    
+                
+                    
+                <p>The context window is a box: the finite, fixed set of tokens visible to the model in predicting the next token. It is the space of customization, the receptacle for text. Model capabilities have expanded explosively over the past year—from elaborate autocomplete to long-horizon autonomous work—while the context window has remained unchanged in size.</p>
+                    
+                
+                    
+                <p>The first million-token context windows arrived in late 2024. The frontier models of February 2025 offered million-token contexts; the frontier models of today offer approximately the same. Context capacity has expanded at a rate far below that of model capability, necessitating ever-greater selectivity regarding its contents as task complexity rises.</p>
+                    
+                
+                    
+                <p>It was established early that the wholesale inclusion of a codebase is infeasible. Documentation, internal codebases, and reminders, however, must be accommodated within the context window—an enterprise that has become a full-time engineering discipline.</p>
+                    
+                
+                    
+                <p>Resistance to the title 'context engineer' has been observed among many software engineers. The two, it should be stated, are one and the same. As agents grow more proficient in software authorship and genuine software engineering, instructing them will become the primary discipline of the field—as it has always, in fact, been. Formerly, one attained sufficient seniority for the assurance of junior-engineer performance to constitute one's full-time role. The equivalent obligation now attaches to agents, and must be discharged at every level.</p>
+                    
+                
+                    
+                <p>The context window must accommodate everything that contributes to next-token prediction: the system prompt, tool definitions, CLAUDE.md, skills, files read, tool results. Volume at the front proportionally reduces capacity for the task at the rear. Every customization competes for working space; an entire codebase cannot be accommodated. Naive wholesale insertion is possible but markedly inferior to deliberate selection of relevant context.</p>
+                    
+                
+                    
+                <p>A preferred analogy is running npm on an Arduino. Conventional dependency management on a full computer affords abundant mechanisms for classic problems; a diamond dependency conflict in npm is resolved by simply importing two library versions. Context customization admits no such expedient: relevance must be adjudicated, with the relevant admitted and the irrelevant excluded. The governing principle of customization, therefore, is the zero-overhead principle—do not pay for what is not used—lest tokens be exhausted rapidly.</p>
+                    
+                
+                    
+                <p>A further constraint is the KV cache. Next-token prediction in modern LLMs is markedly cheaper when tokens are identical to those previously processed. The class of problem is familiar in computing: relevant and less-relevant information contending for severely limited storage, conventionally resolved by LRU caching, as in CPU and web caches. LLM prediction, however, imposes a hard constraint: prediction of the next token requires identity of all preceding tokens. The consequence is a tenfold cost differential between predictions; applied per tool call, token consumption becomes prohibitive.</p>
+                    
+                
+                    
+                <p>Cursor encountered precisely this difficulty in the early days of Cursor Rules. Its initial approach—swapping the most relevant rules in and evicting the irrelevant, in the manner of an LRU cache—was quickly found to be prohibitively costly. The problem is accordingly far more complex and subtle than mere LRU caching. The caching properties of the prediction mechanism render certain operations very cheap and others extremely expensive. [IMAGE:5]</p>
+                    
+                
+                    
+                <p>Selecting Scalable Plugin Abstractions</p>
+                    
+                
+                    
+                <p>Consider 5,000 distinct repositories, each wishing to offer three or four skills governing work on its portion of the codebase—or, further, each providing its own MCP server. What results?</p>
+                    
+                
+                    
+                <p>MCP, in essence, appends additional tool-call schemas to the system prompt. A JSON-based protocol, it is lightweight from the client's perspective: the client may declare its desire for additional tools to handle a given matter. Transport-agnostic and consumer-friendly, it is not, however, necessarily engineer-friendly.</p>
+                    
+                
+                    
+                <p>When, then, is MCP the correct tool? Where an integration must serve any client, including chatbots, it is indicated. Authentication residing on the server side confers a substantial portability advantage, at the cost of environmental ubiquity. The operative reality, however, is that one programs within one's corporate development environment. Where a CLI already exists, a skill explaining its use is likely to be markedly superior to an MCP server.</p>
+                    
+                
+                    
+                <p>Does MCP, then, scale? With a thousand MCP servers in a monorepo, wholesale loading into context is self-defeating. Each tool carries a name, description, and schema, all of which must reside in the system prompt for the model to use it. Twenty servers of fifteen tools each would see the context window consumed largely by tool descriptions, leaving scant room for actual work. It cannot, therefore, scale unassisted.</p>
+                    
+                
+                    
+                <p>Recent work includes tool search, which loads tool names first. Full scalability remains unattained—a million tools would still exhaust the context—yet the approach improves upon 'name plus description plus schema.' Names are provided to Claude first, together with a tool for searching tools, matryoshka-fashion. There is, however, no free lunch: the more descriptive a tool's name, or the more description embedded therein, the more likely Claude is to recall it for search. An arbitrary name such as 'query' is unlikely to be sought at the opportune moment. Users of Claude Code should accordingly weigh carefully the number of connected MCP servers, as each dilutes the model's capacity to locate needed tools. Tool search scales modestly, and imperfectly.</p>
+                    
+                
+                    
+                <p>A skill is, in substance, a folder containing a markdown file. Its governing idea is that of a lazy system prompt: a body of instructions accompanied by a summary, permitting the model to determine when to expand that portion of the system prompt. The mechanism is long-standing in software engineering—commencing small and enlarging as required is the classic scaling pattern. Supplementary resources may reside in the skill folder, with Claude knowledgeable as to their access. Resonance with skills is attributable, in my view, to their extreme formal simplicity: a folder, devoid of special protocol. The skill.md file carries front matter fields—description, for instance—in which a brief account instructs the model whether to expand the full prompt.</p>
+                    
+                
+                    
+                <p>Scalability, then, is partial. The body is consumed on a pay-per-use basis—cost accrues solely upon use, as with a codebase of, say, 500,000 lines. The description, however, is permanently loaded, resident in the system prompt. One hundred thousand skills would see one hundred thousand descriptions exhaust the context window. Full scalability to codebases of Google's or Facebook's magnitude remains, therefore, unattained. The most interesting question is thus posed: how are these mechanisms to perform actual software engineering? Such scalability is a precondition.</p>
+                    
+                
+                    
+                <p>Skills likewise lack hierarchical capability, confronting the same problem as tool search. Tool search carries a single description, whose length improves triggering efficacy. The question of a skill-search tool is accordingly raised; it is under construction. The undertaking is more difficult than tool search, as it demands knowledge of one's ignorance, whereas tool search demands only knowledge of one's incapacity. Recognition of incapacity is materially easier than recognition of ignorance.</p>
+                    
+                
+                    
+                <p>Subagents closely resemble skills: each is furnished with a brief description resident in the system prompt. The distinction lies in expansion: a skill has Claude expand the description within its own context window, whereas a subagent expands it into an independent context window, executes a subtask autonomously, and returns only a summary of its actions. In this respect, scalability is superior. Within a large monorepo, however, subagents numbered in the hundreds, thousands, or tens of thousands would squander a substantial portion of the context window on description strings. The essential distinction: skills are in-context; subagents are out-of-context.</p>
+                    
+                
+                    
+                <p>Hooks are the preferred abstraction, as they genuinely scale. The abstraction that should, in general, be constructed is one that deposits nothing into the context window absent a determination of relevance. A hook operates thus: upon a specific event—a tool call, a user prompt submission, a model stoppage for any reason, or context compaction—a specific script is executed. A protocol governs the script's input and the output to be delivered. Delivery determines whether content is admitted to the context window.</p>
+                    
+                
+                    
+                <p>The scaling properties of hooks warrant examination. On a Rust project with ten JavaScript-related skills, the ten short JavaScript prompts are nonetheless paid for, notwithstanding their irrelevance, and manual deactivation is required to avoid the cost. Conversely, with ten JavaScript-linting skills on a Rust codebase, no cost is incurred for the skills themselves; the cost is that of script execution, and the script, detecting the absence of JavaScript, exits immediately. Nothing unused is paid for beyond CPU resources, which are considerably more abundant than context space.</p>
+                    
+                
+                    
+                <p>Hooks execute outside the context window, as scripts or, conceivably, containing agents—though caution is advised, as token consumption may prove rapid. Content is injected solely upon trigger, upon match. The prevailing pattern: invoke the script; adjudicate relevance immediately; exit promptly upon irrelevance; otherwise, process and determine whether anything relevant is available for the model. The earlier red squiggle resides here.</p>
+                    
+                
+                    
+                <p>Which abstractions, then, are deemed unsuitable for plugins? CLAUDE.md is the preferred illustration. The question is frequently posed: why is no CLAUDE.md-style abstraction offered for plugins? The answer: it is maximally antithetical to pay-for-what-you-use. An abstraction permitting unconditional text injection at the head of every context would constrain concurrent plugin activation to five or ten. The more insidious problem is the appearance of economy: the first act of a plugin author is apt to be the creation of a CLAUDE.md explaining the plugin. Implementation-side cost is negligible; usage-side cost is prohibitive. The practice remains available—a session-start hook may inject substantial tokens at the commencement of each session—but at least the cost, borne by all, would be conspicuous.</p>
+                    
+                
+                    
+                <p>Memory draws a distinct line across what I term the plugin boundary. Memory is model-curated—text files, in their entirety. The model is instructed to write a text file and, at a designated later point, to read it. Being model-curated, however, it is not regarded as a context-engineering primitive. The focus of concern is the identification of sustainable, reusable context-engineering primitives, to be distinguished from plugins. Whatever their resemblance to skills—whatever their updates and their shared knowledge type—the future of very-large-scale software engineering will require a clear demarcation between context engineering and memory, operating with substantial independence.</p>
+                    
+                
+                    
+                <p>Multi-Agent Workflows</p>
+                    
+                
+                    
+                <p>Concurrency is the sole route to scale and speed. Comfortable management of twenty concurrent Claudes yields approximately four times the output of five. A substantial portion of 2026's effort will be directed at identifying abstractions that afford developers the cognitive space for rapid context switching.</p>
+                    
+                
+                    
+                <p>Git worktrees constitute the simplest point of departure. Each session is assigned a distinct worktree, precluding collisions between Claudes. The /color feature—readily accessible—permits an activity label to be paired with a color. Upon switching windows, the color cues recall of the work in progress. Research indicates that non-colorblind individuals recall color-associated information faster than text-associated information.</p>
+                    
+                
+                    
+                <p>My operative configuration is as depicted; these long-lived agents are genuinely run. The image is somewhat dated, sixteen resident worktrees having proven insufficient for efficient operation. The enumeration now extends to Z, rather than A through F. Each worktree is independent, with an agent charged with its long-term maintenance. [IMAGE:6]</p>
+                    
+                
+                    
+                <p>For veterans of tech-leadership roles in large organizations, agents with persistent identity are of genuine utility. An agent possessing a fixed name and fixed memory, administering its own temporary files within its own worktree branch, materially improves work organization.</p>
+                    
+                
+                    
+                <p>Diagrammatically: long-lived worktrees, named for their agents. Each tracks upstream main and is charged with managing that tracking. Collisions are thereby precluded; the arrangement approximates independent developers operating in parallel. [IMAGE:7]</p>
+                    
+                
+                    
+                <p>Agent teams furnish the model with a channel to other agents. With two Claudes running concurrently, information conveyed to one may be relayed to the other. The Send message tool constitutes the foundational primitive, enabling message transmission from one session to another. A team lead may delegate to members; alternatively, peer agents may operate, with discoveries shared at the user's direction. Control resides with the user.</p>
+                    
+                
+                    
+                <p>Upon login and grant of permissions, any session on any machine may communicate with any session on any other machine. The model may thereby be directed to consult other instances directly. This is a further instance of extending Claude's access to everything the user possesses: the model must see what the user can see. If another agent is among the user's visible resources, that agent should be rendered accessible as well.</p>
+                    
+                
+                    
+                <p>/loop was released approximately two months ago. It is, in substance, a cron command—a scheduling instrument for models—permitting a model to arrange the automatic recurrence of a message at, say, ten-minute intervals. Self-termination is likewise possible: 'This has been checked every ten minutes for three days; it is now being discontinued.' Token consumption is incurred, but is trivial relative to manual CI inspection, copy-paste, and task re-initiation. The recurrent failure mode—models ceasing work prior to completion—is effectively addressed by /loop, which equips Claude to ensure continuity until task completion. Models are further observed to be increasingly capable of recognizing that a result due in three hours warrants a mechanism for waking in three hours.</p>
+                    
+                
+                    
+                <p>Auto mode is the key to multi-Claude collaboration, and the mechanism by which twenty to thirty agents may be run concurrently, obviating continuous manual advancement. It is superior to YOLO mode. A complex suite of safety mechanisms subjects operations to multiple rounds of model-and-classifier screening, adjudicating danger prior to approval or denial. Prompts are examined to establish genuine instruction; an operation appearing dangerous and lacking explicit instruction is blocked. It is this mechanism that renders /loop, agent teams, and overnight runs genuinely viable. Costs are non-trivial—an increase of 10 to 40 percent, depending on the model.</p>
+                    
+                
+                    
+                <p>2025 was characterized by information input to models in pursuit of better results; agentic programming remained nascent, and model errors were continuously compensated. 2026, I believe, will see the direction reversed: information from the model to the user. The quality of user-supplied information will diminish in importance as models strengthen, ceasing to constitute the bottleneck. The operative questions this year concern the speed of context switching and workflow expansion for the receipt of information on model activity. As Claude states: your attention is the smallest box in the system.</p>
+                    
+                
+                    
+                <p>Claude Agents—also designated Fleet View—is one of the products released in this direction. The responsible team member employed it to merge approximately one thousand pull requests within a week. It constitutes a substantial expansion of attention, presenting all running work in a single location. Lightweight classifier models supply brief descriptions of model requirements and recent completions. Ten distinct Claude Code sessions are rendered in one view, with direct entry to any session, obviating the management of twenty tabs.</p>
+                    
+                
+                    
+                <p>Remote control constitutes another highly valued mechanism in ongoing use. Persistent agents are operated on cloud servers, with interaction available via mobile and the Claude Code desktop application. Portions of this presentation were composed while walking from a hotel, in interaction with an agent running on a development machine, via mobile.</p>
+                    
+                
+                    
+                <p>In conclusion, three points bear reiteration. One: grant the model access. Two: consider the box—its contents and their effect on its outputs. Three: select abstractions that scale to large-scale, real-world software engineering.</p>
+                    
+                
+                    
+                <p>Original talk video: [https://www.youtube.com/watch?v=shZgedW15vg](https://www.youtube.com/watch?v=shZgedW15vg)</p>
+                    
+                
+                    
+                <p>The address was delivered by Daisy Hollman at NDC Copenhagen; the recording is accessible via the link above, and the accompanying slide deck and materials were produced with Claude Code.</p>
+                    
+                
+                    
+                <p>Thus concludes the InfoQ compilation of Daisy Hollman's NDC Copenhagen presentation, covering Claude Code plugins, context engineering, and multi-agent workflows.</p>
+                    
+                
+            
+        </div>
+    </article>
+</div></main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <span class="footer-copy">&copy; 2026 AI Flux &mdash; Curated Tech Intelligence &middot; Professional Translation</span>
+                <span class="footer-page-links">
+                    <a href="../../about/">About</a>
+                    <a href="../../contact/">Contact</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

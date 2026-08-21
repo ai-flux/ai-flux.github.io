@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="AI Flux">
+    
+<title>DeepSeek Releases Harness as Open Source, With Models, Tools, and Agent Loop Built as Plugins - AI Flux &mdash; Curated Tech Intelligence</title>
+<meta name="description" content="DeepSeek has opened Harness v0.1 to developers under the MIT license. Built on the principle that 'everything is a plugin' — models, tools, skills, sessions, sandboxes, storage, Agent Loop, scheduling, and UI are all replaceable and assembled by Cordis — the preview ships four operating modes and multi-agent orchestration, with an append-only log underpinning observability and replay. Its prospects will be decided by the plugin ecosystem." />
+<link rel="canonical" href="https://ai-flux.top/Tools/255/" />
+<meta property="og:title" content="DeepSeek Releases Harness as Open Source, With Models, Tools, and Agent Loop Built as Plugins" />
+<meta property="og:description" content="DeepSeek has opened Harness v0.1 to developers under the MIT license. Built on the principle that 'everything is a plugin' — models, tools, skills, sessions, sandboxes, storage, Agent Loop, scheduling, and UI are all replaceable and assembled by Cordis — the preview ships four operating modes and multi-agent orchestration, with an append-only log underpinning observability and replay. Its prospects will be decided by the plugin ecosystem." />
+<meta property="og:image" content="https://ai-flux.top/assets/default_og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "DeepSeek Releases Harness as Open Source, With Models, Tools, and Agent Loop Built as Plugins",
+  "description": "DeepSeek has opened Harness v0.1 to developers under the MIT license. Built on the principle that 'everything is a plugin' — models, tools, skills, sessions, sandboxes, storage, Agent Loop, scheduling, and UI are all replaceable and assembled by Cordis — the preview ships four operating modes and multi-agent orchestration, with an append-only log underpinning observability and replay. Its prospects will be decided by the plugin ecosystem.",
+  "image": "https://ai-flux.top/assets/default_og.jpg",
+  "datePublished": "2026-08-15T16:11:11Z"
+}
+</script>
+
+    <link rel="stylesheet" href="../../assets/css/style.css?v=2">
+        <!-- ===== 统计代码钩子（由 config.yaml 驱动） ===== -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XGDSPRE0L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-0XGDSPRE0L');
+    </script>
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?85296c1ac38b768654710957114c951f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+    
+    <script>console.log('Custom analytics loaded');
+</script>
+    
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                <div class="site-title"><a href="../../">AI Flux</a></div>
+                <div class="header-nav">
+                    <a href="../../about/">About</a>
+                    <span class="header-nav-sep">|</span>
+                    <a href="../../contact/">Contact</a>
+                </div>
+            </div>
+        </header>
+        <nav class="category-nav">
+            <div class="container" style="display:flex;gap:24px;">
+                <a href="../../" class="">Home</a>
+                
+                <a href="../../?category=Frontiers" class="">Frontiers</a>
+                
+                <a href="../../?category=Deep Reads" class="">Deep Reads</a>
+                
+                <a href="../../?category=Business" class="">Business</a>
+                
+                <a href="../../?category=Dev Hub" class="">Dev Hub</a>
+                
+                <a href="../../?category=Tools" class="active">Tools</a>
+                
+                <a href="../../?category=Reports" class="">Reports</a>
+                
+            </div>
+        </nav>
+        
+<main><div class="container">
+    <article class="article-detail">
+        <h1>DeepSeek Releases Harness as Open Source, With Models, Tools, and Agent Loop Built as Plugins</h1>
+        <div class="meta">
+            <span class="category-tag" style="display:inline-block;background:var(--wsj-accent);color:white;font-family:var(--wsj-font-sans);font-size:11px;font-weight:600;padding:2px 10px;border-radius:12px;text-transform:uppercase;letter-spacing:0.5px;margin-right:12px;">Tools</span>
+            <span>Aug 15, 2026</span>
+        </div>
+        <div id="tab-content-wall_street" class="tab-content">
+            
+                
+                    
+                <p>DeepSeek has placed Harness under an open-source license, rendering models, tools, and the Agent Loop replaceable plugins.</p>
+                    
+                
+                    
+                <p>DeepSeek's Harness has finally landed.</p>
+                    
+                
+                    
+                <p>On August 13, DeepSeek made the DeepSeek Harness developer preview available to developers worldwide. The initial release, v0.1, was accompanied by source code published under the MIT license: https://github.com/deepseek-ai/deepseek-harness</p>
+                    
+                
+                    
+                <p>The Web UI can now be launched directly via `npx @deepseek-ai/dsh web`; alternatively, the full project can be pulled from GitHub.</p>
+                    
+                
+                    
+                <p>The version number signals a product far from maturity. DeepSeek has acknowledged that considerable refinement remains, with core plugins and foundational interfaces slated for rapid iteration. Even so, the release has settled the question the industry most wanted answered: how DeepSeek would approach its own Harness.</p>
+                    
+                
+                    
+                <p>The answer given: everything is a plugin.</p>
+                    
+                
+                    
+                <p>Replaceability extends even to the Agent Loop.</p>
+                    
+                
+                    
+                <p>Discussion of AI coding has, in recent months, moved from models to harnesses. The same model, embedded in different agent systems, can yield markedly different results. The cause is straightforward: the model predicts the next step, while the harness governs what the model sees, which tools it may invoke, how context is structured, how failures are retried, and when a task is deemed complete.</p>
+                    
+                
+                    
+                <p>Mainstream coding agents now support plugins, MCP, or custom tools, yet extensibility has typically been limited to tool and skill layers. DeepSeek Harness extends the plugin boundary to the entire runtime: models, tools, skills, sessions, sandboxes, storage, Agent Loop, scheduling, and UI are all plugin-defined.</p>
+                    
+                
+                    
+                <p>Replaceability now spans from a search tool or MCP Server to the agent's looping behavior, sub-agent scheduling, session persistence, and the eventual interface — all without modification to Harness source code.</p>
+                    
+                
+                    
+                <p>The architecture rests on the Cordis plugin system. Cordis, as a meta-framework, handles only plugin loading, unloading, and dependency management; agent capabilities are supplied by individual plugins. Coordination occurs through services and events, with configuration governing composition.</p>
+                    
+                
+                    
+                <p>Tool invocation has likewise been refactored into an extensible pipeline. Requests pass through hooks, approval, permission checks, sandboxing, and timeout control before execution; afterward, results may be rewritten, recorded, and rendered. Plugins can be inserted at any stage without changes to tools or the Agent Loop.</p>
+                    
+                
+                    
+                <p>Code and its sub-calls in PTC mode pass through the same pipeline; approval and sandboxing cannot be circumvented. Standard and programmatic tool calls enter through different paths yet share a common security and observability framework.</p>
+                    
+                
+                    
+                <p>DeepSeek Harness is thus positioned as a composable agent runtime foundation, a departure from fixed-function coding agents. The release is aimed, first and foremost, at Harness developers rather than end users seeking a client to begin coding immediately.</p>
+                    
+                
+                    
+                <p>The four modes are, in effect, four plugin configurations.</p>
+                    
+                
+                    
+                <p>Four runtime modes are offered on a single foundation. No separate systems are maintained; the modes differ chiefly in their default plugin sets.</p>
+                    
+                
+                    
+                <p>Standard mode provides a full tool set for conventional agent tasks. PTC mode supports Programmatic Tool Calling, allowing the model to generate code that chains multiple tool calls. Minimal mode retains only shell and file-editing tools, isolating the model for testing in a minimal environment. Creative mode permits the agent to inspect its runtime, experiment with Cordis plugins in memory, and assemble new runtime modes.</p>
+                    
+                
+                    
+                <p>Creative mode merits the closest attention. Under conventional harnesses, runtime behavior is predefined by product developers, leaving users to select among fixed configurations. Creative mode instead enables the agent to understand its runtime and, as tasks require, test plugins and assemble capabilities. Configuration, in short, is itself becoming a manipulable object for the agent.</p>
+                    
+                
+                    
+                <p>How close this brings the field to an 'agent that reconfigures its own harness' awaits validation by code, examples, and real workloads. What is confirmed: runtime composability has been granted to models, configuration, and framework developers alike.</p>
+                    
+                
+                    
+                <p>Multi-Agent Design: Architecturally Novel, Paradigmatically Unchanged</p>
+                    
+                
+                    
+                <p>A full multi-agent system is built into DeepSeek Harness. Parent agents may launch sub-agents with fresh contexts via Spawn, or pass on existing sessions through Fork; for more demanding tasks, the model can author JavaScript in situ via the workflow tool, orchestrating parallel or pipelined execution with parallel() and pipeline(), and rotate among fresh agents through Ralph mode.</p>
+                    
+                
+                    
+                <p>Among the five standard orchestration patterns, DeepSeek Harness most resembles hierarchical Supervisor–Worker: parent agents decompose, assign, and consolidate tasks while sub-agents execute. It is, more precisely, a hybrid — hierarchical at its core, with parallel, pipeline, and Ralph-loop capabilities.</p>
+                    
+                
+                    
+                <p>A genuine Swarm remains distant. Control and task allocation reside primarily with the parent agent; mechanisms for autonomous discovery, negotiation, competition, and dynamic task handover among agents are absent.</p>
+                    
+                
+                    
+                <p>The multi-agent capabilities of DeepSeek Harness are therefore innovative without constituting a paradigm shift. Spawn, Fork, Pipeline, and Ralph Loop all follow established precedents; the genuine differentiator is that these patterns are implemented as configuration-replaceable plugins, allowing even Claude Code, Codex, or ACP-compatible external agents to be attached behind the same sub-agent interface. The architecture is novel; the orchestration paradigm is not. The design is advanced by open-source harness standards; describing it as a 'new multi-agent architecture' would overstate the case.</p>
+                    
+                
+                    
+                <p>Every Trajectory Is Written to a Single Event Stream</p>
+                    
+                
+                    
+                <p>A further core design decision is the append-only session log.</p>
+                    
+                
+                    
+                <p>All model-visible content — system prompts, reasoning, tool calls and their results, sub-agent scheduling, and each context injection — is written to a single append-only log. Entries can be inspected by source in the Trajectory view; session resumption, forking, retrieval, and replay are all anchored to the same event stream.</p>
+                    
+                
+                    
+                <p>The design targets observability first. Failure of an agent task can originate in model judgment, tool output, context injection, scheduling policy, or system prompts; scattered across components, these are difficult to reconstruct. A unified event stream provides a common record for debugging, evaluation, and replay.</p>
+                    
+                
+                    
+                <p>Session forking, too, receives a more natural data structure: new branches inherit events preceding the fork point and append fresh context and actions, leaving the original history intact. The property is especially consequential in a plugin-replaceable system, where developers must compare Loop, tool, or scheduling plugins against identical task trajectories.</p>
+                    
+                
+                    
+                <p>Differentiation Is Staked on Architectural Openness</p>
+                    
+                
+                    
+                <p>On the evidence of this release, the sharpest differentiation of DeepSeek Harness lies at the architectural level, where each layer's capabilities are decomposed into replaceable plugins. No novel multi-agent orchestration algorithm has been introduced; the emphasis is on allowing developers to alter both the tools available to an agent and the rules governing its operation.</p>
+                    
+                
+                    
+                <p>An industry expert told InfoQ that, across the full Harness chain, the major directions — tool calling, memory management, and task planning — are essentially fixed, with substantial innovation expected in constituent components. Memory management illustrates the point: accumulated memory requires compression, and conflicting memories demand prompt reconciliation and cleanup lest they distort subsequent agent judgment.</p>
+                    
+                
+                    
+                <p>Task planning likewise admits further refinement. Agents need not plan anew on every occasion; recurring problems can reuse established planning paths. Once generated, a plan could be subjected to a 'compilation'-style check: the Plan is first rendered as structured data, then examined for complete exception-handling branches, absence of unexecutable operations, and conformity of every step to permitted scope. The 'compilation' is not compilation proper, but structured validation of the execution plan.</p>
+                    
+                
+                    
+                <p>On this reading, harness frameworks are converging; the decisive gap will be the granularity of memory compression, conflict cleanup, path reuse, and Plan validation. The merit of DeepSeek's 'everything is a plugin' principle is that it reserves space for the replacement, combination, and continued experimentation of precisely such local capabilities.</p>
+                    
+                
+                    
+                <p>The approach, however, carries visible costs. The deeper the plugin boundary, the more difficult the control of interface stability, dependency management, version compatibility, performance overhead, and debugging complexity. At the v0.1 stage in particular, core plugins and foundational interfaces remain in flux; developers who enter the ecosystem now must absorb substantial migration costs.</p>
+                    
+                
+                    
+                <p>Nor does universal replaceability translate automatically into higher task success rates. The architecture's ultimate value rests on the quality of official default plugins, the stability of composition patterns, and the credibility of published evaluations — and on whether third-party developers persist in building for the ecosystem. A plugin system creates room for differentiation; the outcome is delivered by implementation.</p>
+                    
+                
+                    
+                <p>That DeepSeek selected the MIT license and released complete source code during developer preview indicates ambitions beyond a closed client for its models. Models, tools, Loop, scheduling, and UI are to be housed in a single composable framework, with external developers invited to extend it in common.</p>
+                    
+                
+                    
+                <p>DeepSeek Harness v0.1 is a beginning. The question worth watching is whether 'everything is a plugin' crystallizes into a stable development standard, and whether the project matures into DeepSeek's own coding product or the shared harness beneath a broader field of agent products.</p>
+                    
+                
+                    
+                <p>Getting Started</p>
+                    
+                
+                    
+                <p>With the Node.js toolchain installed, the Web UI can be started with the following command:</p>
+                    
+                
+                    
+                <p>`npx @deepseek-ai/dsh web`</p>
+                    
+                
+                    
+                <p>The source may also be obtained directly:</p>
+                    
+                
+                    
+                <p>`git clone https://github.com/deepseek-ai/deepseek-harness`</p>
+                    
+                
+            
+        </div>
+    </article>
+</div></main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <span class="footer-copy">&copy; 2026 AI Flux &mdash; Curated Tech Intelligence &middot; Professional Translation</span>
+                <span class="footer-page-links">
+                    <a href="../../about/">About</a>
+                    <a href="../../contact/">Contact</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

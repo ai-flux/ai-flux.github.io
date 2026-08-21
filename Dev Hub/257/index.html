@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="AI Flux">
+    
+<title>Rust Codifies New Rules for AI Coding: AI May Review, but Not Author; Excessive Use Trips a 'Circuit Breaker' - AI Flux &mdash; Curated Tech Intelligence</title>
+<meta name="description" content="Five Rust teams have codified an LLM policy: models may answer, analyze, review, and translate, but may not 'create' code, documentation, or diagnostics. Authorized AI-assisted changes require a designated reviewer, avoidance of critical code, and disclosure; new contributors are restricted. When LLM-created PRs account for more than half of merges in any six-week period, merging is suspended — a circuit breaker contrasting with Zig's outright prohibition." />
+<link rel="canonical" href="https://ai-flux.top/Dev Hub/257/" />
+<meta property="og:title" content="Rust Codifies New Rules for AI Coding: AI May Review, but Not Author; Excessive Use Trips a 'Circuit Breaker'" />
+<meta property="og:description" content="Five Rust teams have codified an LLM policy: models may answer, analyze, review, and translate, but may not 'create' code, documentation, or diagnostics. Authorized AI-assisted changes require a designated reviewer, avoidance of critical code, and disclosure; new contributors are restricted. When LLM-created PRs account for more than half of merges in any six-week period, merging is suspended — a circuit breaker contrasting with Zig's outright prohibition." />
+<meta property="og:image" content="https://ai-flux.top/asset/images/article_257/image_0.jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Rust Codifies New Rules for AI Coding: AI May Review, but Not Author; Excessive Use Trips a 'Circuit Breaker'",
+  "description": "Five Rust teams have codified an LLM policy: models may answer, analyze, review, and translate, but may not 'create' code, documentation, or diagnostics. Authorized AI-assisted changes require a designated reviewer, avoidance of critical code, and disclosure; new contributors are restricted. When LLM-created PRs account for more than half of merges in any six-week period, merging is suspended — a circuit breaker contrasting with Zig's outright prohibition.",
+  "image": "https://ai-flux.top/asset/images/article_257/image_0.jpeg",
+  "datePublished": "2026-08-15T16:11:11Z"
+}
+</script>
+
+    <link rel="stylesheet" href="../../assets/css/style.css?v=2">
+        <!-- ===== 统计代码钩子（由 config.yaml 驱动） ===== -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XGDSPRE0L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-0XGDSPRE0L');
+    </script>
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?85296c1ac38b768654710957114c951f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+    
+    <script>console.log('Custom analytics loaded');
+</script>
+    
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                <div class="site-title"><a href="../../">AI Flux</a></div>
+                <div class="header-nav">
+                    <a href="../../about/">About</a>
+                    <span class="header-nav-sep">|</span>
+                    <a href="../../contact/">Contact</a>
+                </div>
+            </div>
+        </header>
+        <nav class="category-nav">
+            <div class="container" style="display:flex;gap:24px;">
+                <a href="../../" class="">Home</a>
+                
+                <a href="../../?category=Frontiers" class="">Frontiers</a>
+                
+                <a href="../../?category=Deep Reads" class="">Deep Reads</a>
+                
+                <a href="../../?category=Business" class="">Business</a>
+                
+                <a href="../../?category=Dev Hub" class="active">Dev Hub</a>
+                
+                <a href="../../?category=Tools" class="">Tools</a>
+                
+                <a href="../../?category=Reports" class="">Reports</a>
+                
+            </div>
+        </nav>
+        
+<main><div class="container">
+    <article class="article-detail">
+        <h1>Rust Codifies New Rules for AI Coding: AI May Review, but Not Author; Excessive Use Trips a 'Circuit Breaker'</h1>
+        <div class="meta">
+            <span class="category-tag" style="display:inline-block;background:var(--wsj-accent);color:white;font-family:var(--wsj-font-sans);font-size:11px;font-weight:600;padding:2px 10px;border-radius:12px;text-transform:uppercase;letter-spacing:0.5px;margin-right:12px;">Dev Hub</span>
+            <span>Aug 15, 2026</span>
+        </div>
+        <div id="tab-content-wall_street" class="tab-content">
+            
+                
+                    
+                <p>Rust Codifies New Rules for AI Coding: AI May Review, but Not Author; Excessive Use Trips a 'Circuit Breaker'</p>
+                    
+                
+                    
+                <p>Five Rust teams have formally adopted a new policy on AI-assisted coding, establishing rules for contributor use of large language models (LLMs) in rust-lang/rust.</p>
+                    
+                
+                    
+                <p>The policy, authored by Jynn Nelson, was announced on the Inside Rust blog on August 5, 2026, for rust-lang/rust — the project's principal monolithic codebase.</p>
+                    
+                
+                    
+                <p>Its core principle can be summarized in a single sentence:</p>
+                    
+                
+                    
+                <p>LLMs may answer, analyze, distill, refine, verify, suggest, and review; creation is prohibited. [IMAGE:0]</p>
+                    
+                
+                    
+                <p>Approved by five teams — compiler, standard library, type system, rustdoc, and bootstrap — the policy replaces the 'Wild West' era of unwritten rules that Nelson described with codified, public guidelines.</p>
+                    
+                
+                    
+                <p>The policy presently governs only the rust-lang/rust repository and binds only its approving teams. A clear boundary is drawn: LLMs are welcome as instruments of thought, not substitutes for it.</p>
+                    
+                
+                    
+                <p>What, precisely, does Rust permit AI to do?</p>
+                    
+                
+                    
+                <p>Nelson outlined the rules on the Inside Rust blog:</p>
+                    
+                
+                    
+                <p>No one is obligated to read LLM-generated content. Unlabeled LLM output is barred from public documentation, PR descriptions, and GitHub comments; reviewers may decline PRs involving LLM generation. LLM use is not a condition of contributing to rust-lang/rust. Policies must first be written for humans, then adapted for machine consumption. LLM reviews neither substitute for human review nor for the author's own verification. Private, undisclosed LLM use is permitted provided output is not published where Rust members must read or review it. Machine translation, 'minor edits,' bug discovery, and review of others' work require disclosure of LLM involvement. Contributors may communicate in their native language; prior English translation is not required.</p>
+                    
+                
+                    
+                <p>In essence: think, review, and translate — but do not create. Operationally, the rules fall into three tiers.</p>
+                    
+                
+                    
+                <p>Tier one is unrestricted: private use in which only the contributor sees LLM output — querying the codebase, summarizing a thread, or privately soliciting a review of one's own code.</p>
+                    
+                
+                    
+                <p>Tier two is permitted with disclosure: machine translation, minor edits such as typo fixes, LLM-assisted bug discovery, and LLM review bots. Review bots must operate under separate, clearly marked GitHub accounts, allowing uninterested users to block them directly.</p>
+                    
+                
+                    
+                <p>Tier three is prohibited: LLM-generated comments, documentation, and compiler diagnostics; processes that require an LLM to function; and merge or rejection decisions based solely on an LLM's review.</p>
+                    
+                
+                    
+                <p>The policy's binding force lies in its enforcement.</p>
+                    
+                
+                    
+                <p>Deliberate concealment or misrepresentation of LLM use constitutes a Code of Conduct violation, ranked alongside harassment. A first offense may warrant a warning; repeat offenses may result in a ban.</p>
+                    
+                
+                    
+                <p>The policy candidly concedes that much of it cannot be technically enforced — by design. "Our goal is not to catch every violation... Our goal is to eliminate any space for evasion: to make people choose between compliance and deliberate violation," it states.</p>
+                    
+                
+                    
+                <p>Rust is not alone in drawing boundaries around LLMs; its contrast with Zig is instructive. [IMAGE:1]</p>
+                    
+                
+                    
+                <p>Zig's prohibition is more absolute: LLM-generated code and text are banned, as are rewriting or paraphrasing such content; AI use for editing, translation, brainstorming, or bug hunting is disallowed. Zig's regime is inexpensive to enforce yet burdensome to obey. Rust takes the opposite course: reviewers bear greater judgment, while contributors retain the LLM tools they already employ. [IMAGE:2]</p>
+                    
+                
+                    
+                <p>Excessive AI-Generated Code Trips a 'Circuit Breaker'</p>
+                    
+                
+                    
+                <p>Rather than prohibiting LLM-written code outright, Rust confines such contributions to a narrowly scoped experiment.</p>
+                    
+                
+                    
+                <p>LLM-created changes must be prearranged with a designated reviewer, avoid critical areas such as compiler soundness, be fully tested, and undergo thorough human review; disclosure of LLM involvement is mandatory in all cases.</p>
+                    
+                
+                    
+                <p>New contributors are most constrained. First-time contributors may not submit LLM-created pull requests without first securing a reviewer willing to own the review. Where the affected code lacks a test suite, the contributor must supply one; otherwise the PR is closed. No exceptions are granted.</p>
+                    
+                
+                    
+                <p>The experiment is equipped with its own 'circuit breaker.'</p>
+                    
+                
+                    
+                <p>Should LLM-created PRs exceed half of all merges in any six-week window, merging of such PRs is suspended until their share falls below 50%, with a minimum 10-day cooldown.</p>
+                    
+                
+                    
+                <p>The six-week window is no accident: it aligns with Rust's six-week release cycle.</p>
+                    
+                
+                    
+                <p>Such PRs are tagged ai-assisted and mirrored to a private Zulip channel. The channel exists to gather data, not to add review friction: whether LLM-assisted contributors genuinely learn, remain engaged, and ultimately sustain valuable output.</p>
+                    
+                
+                    
+                <p>Nelson cited three pressures that drove the teams from informal practice to codified rules.</p>
+                    
+                
+                    
+                <p>First, an immaculate pull request no longer attests to the author's effort or comprehension of the code.</p>
+                    
+                
+                    
+                <p>Reviewers once inferred from a well-structured, tested, and documented PR that its author had invested heavily and understood the submission. That signal is now eroding, and Rust's review culture had depended on it substantially.</p>
+                    
+                
+                    
+                <p>Second, falling code-generation costs have tightened already constrained review capacity; rust-lang/rust currently holds 1,281 open PRs. The project's scarce resource has never been code but reviewers' judgment and time. An LLM enables one person to produce code rapidly, without a commensurate increase in those able to judge its merits.</p>
+                    
+                
+                    
+                <p>Third, contributors began relaying reviewer comments through an LLM and posting its responses back to GitHub. Nelson called the practice 'a waste of everyone's time': reviewers seeking an LLM's view can consult it directly. Review requires the contributor's own judgment and understanding.</p>
+                    
+                
+                    
+                <p>It also erodes a foundational assumption of review: that reviewers are addressing a real person — one who genuinely engages with the problem and the feedback.</p>
+                    
+                
+                    
+                <p>Rust Itself Remains Divided on AI</p>
+                    
+                
+                    
+                <p>The policy's backdrop is notable: within Rust, attitudes toward AI are markedly divided.</p>
+                    
+                
+                    
+                <p>The motivation section concedes that no consensus exists on when and how AI tools should be used — 'and quite possibly never will.'</p>
+                    
+                
+                    
+                <p>Positions range widely: daily reliance, outright rejection, and lingering indecision. The policy was therefore designed to be amendable; major revisions require re-approval by every signatory team, which may also rescind it entirely.</p>
+                    
+                
+                    
+                <p>The leadership council is separately weighing a project-level LLM committee, whose rules would supersede the current policy.</p>
+                    
+                
+                    
+                <p>Its actual reach is considerably narrower than the headline implies.</p>
+                    
+                
+                    
+                <p>It excludes other rust-lang repositories and certain language team functions, including issue tracking and stability reports.</p>
+                    
+                
+                    
+                <p>The style guide falls outside the policy's scope; non-approving teams remain unbound and may set their own rules.</p>
+                    
+                
+                    
+                <p>Members of the rust-lang organization are excepted from the critical-code restriction when creating LLM-generated code — an exemption the policy strongly discourages.</p>
+                    
+                
+                    
+                <p>PRs submitted prior to the policy's effective date are likewise exempt.</p>
+                    
+                
+                    
+                <p>Notably, a contributor's violation of the LLM policy does not license harassment over LLM use; harassment itself contravenes the Code of Conduct.</p>
+                    
+                
+                    
+                <p>Rust to Decide on Continuation After Six Weeks</p>
+                    
+                
+                    
+                <p>With the ai-assisted label live, Rust will begin collecting data on LLM-created PRs via the private Zulip channel.</p>
+                    
+                
+                    
+                <p>The first six-week cycle will test whether bounded LLM code contributions further burden the merge queue.</p>
+                    
+                
+                    
+                <p>Concurrently, the leadership council continues to deliberate a dedicated LLM committee; if formed, its rules would outrank the current policy and may extend from rust-lang/rust to the project as a whole.</p>
+                    
+                
+                    
+                <p>Chat channels, forums, and repositories without explicit AI policies could then be absorbed into a single framework.</p>
+                    
+                
+                    
+                <p>Nelson evidently endorses the direction, viewing the policy as a first step rather than a final answer to how Rust should confront LLMs.</p>
+                    
+                
+                    
+                <p>
+</p>
+                    
+                
+                    
+                <p>
+</p>
+                    
+                
+            
+        </div>
+    </article>
+</div></main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <span class="footer-copy">&copy; 2026 AI Flux &mdash; Curated Tech Intelligence &middot; Professional Translation</span>
+                <span class="footer-page-links">
+                    <a href="../../about/">About</a>
+                    <a href="../../contact/">Contact</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
