@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="AI Flux">
+    
+<title>From PUE to TPW: SenseTime's AI Infrastructure Unit Proposes a New Efficiency Standard - AI Flux &mdash; Curated Tech Intelligence</title>
+<meta name="description" content="SenseTime's AI infrastructure unit has proposed TPW (Tokens Per Watt) as a replacement for PUE, linking power input to token output in a single efficiency measure, and deployed a compute-energy coordination Agent that schedules compute and energy jointly. Field results at the Lingang AIDC: midday load reduced 75%, 46,000 kWh released for peak shaving, token output per unit of electricity up 80%, forecast accuracy 96%." />
+<link rel="canonical" href="https://ai-flux.top/Frontiers/258/" />
+<meta property="og:title" content="From PUE to TPW: SenseTime's AI Infrastructure Unit Proposes a New Efficiency Standard" />
+<meta property="og:description" content="SenseTime's AI infrastructure unit has proposed TPW (Tokens Per Watt) as a replacement for PUE, linking power input to token output in a single efficiency measure, and deployed a compute-energy coordination Agent that schedules compute and energy jointly. Field results at the Lingang AIDC: midday load reduced 75%, 46,000 kWh released for peak shaving, token output per unit of electricity up 80%, forecast accuracy 96%." />
+<meta property="og:image" content="https://ai-flux.top/asset/images/article_258/image_0.jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "From PUE to TPW: SenseTime's AI Infrastructure Unit Proposes a New Efficiency Standard",
+  "description": "SenseTime's AI infrastructure unit has proposed TPW (Tokens Per Watt) as a replacement for PUE, linking power input to token output in a single efficiency measure, and deployed a compute-energy coordination Agent that schedules compute and energy jointly. Field results at the Lingang AIDC: midday load reduced 75%, 46,000 kWh released for peak shaving, token output per unit of electricity up 80%, forecast accuracy 96%.",
+  "image": "https://ai-flux.top/asset/images/article_258/image_0.jpeg",
+  "datePublished": "2026-08-15T16:11:11Z"
+}
+</script>
+
+    <link rel="stylesheet" href="../../assets/css/style.css?v=2">
+        <!-- ===== 统计代码钩子（由 config.yaml 驱动） ===== -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XGDSPRE0L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-0XGDSPRE0L');
+    </script>
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?85296c1ac38b768654710957114c951f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+    
+    <script>console.log('Custom analytics loaded');
+</script>
+    
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                <div class="site-title"><a href="../../">AI Flux</a></div>
+                <div class="header-nav">
+                    <a href="../../about/">About</a>
+                    <span class="header-nav-sep">|</span>
+                    <a href="../../contact/">Contact</a>
+                </div>
+            </div>
+        </header>
+        <nav class="category-nav">
+            <div class="container" style="display:flex;gap:24px;">
+                <a href="../../" class="">Home</a>
+                
+                <a href="../../?category=Frontiers" class="active">Frontiers</a>
+                
+                <a href="../../?category=Deep Reads" class="">Deep Reads</a>
+                
+                <a href="../../?category=Business" class="">Business</a>
+                
+                <a href="../../?category=Dev Hub" class="">Dev Hub</a>
+                
+                <a href="../../?category=Tools" class="">Tools</a>
+                
+                <a href="../../?category=Reports" class="">Reports</a>
+                
+            </div>
+        </nav>
+        
+<main><div class="container">
+    <article class="article-detail">
+        <h1>From PUE to TPW: SenseTime's AI Infrastructure Unit Proposes a New Efficiency Standard</h1>
+        <div class="meta">
+            <span class="category-tag" style="display:inline-block;background:var(--wsj-accent);color:white;font-family:var(--wsj-font-sans);font-size:11px;font-weight:600;padding:2px 10px;border-radius:12px;text-transform:uppercase;letter-spacing:0.5px;margin-right:12px;">Frontiers</span>
+            <span>Aug 15, 2026</span>
+        </div>
+        <div id="tab-content-wall_street" class="tab-content">
+            
+                
+                    
+                <p>From PUE to TPW: SenseTime's AI Infrastructure Unit Proposes a New Efficiency Standard</p>
+                    
+                
+                    
+                <p>Producing more tokens from limited energy and cost is the defining challenge of AI infrastructure in the token economy.</p>
+                    
+                
+                    
+                <p>Token consumption is rising exponentially, with compute demand following suit and AIDC electricity usage claiming an ever-larger share of national power consumption. Industry attention has shifted from who owns the most compute to who can produce the most high-quality tokens at the lowest cost and highest efficiency.</p>
+                    
+                
+                    
+                <p>Lin Hai, general manager of SenseTime's AIDC, argues that in the token economy, AIDCs should be reframed as value platforms linking electricity to tokens. The depth of joint compute-energy optimization, he contends, is now a decisive variable in commercial competitiveness. [IMAGE:0]</p>
+                    
+                
+                    
+                <p>[Lin Hai, General Manager, SenseTime AIDC]</p>
+                    
+                
+                    
+                <p>01 Why PUE Falls Short in the Token Economy</p>
+                    
+                
+                    
+                <p>How should AI infrastructure efficiency be measured, and how can it be improved? For years, the answer was PUE. The ratio of total to IT energy consumption in a data center, PUE has served as the industry's gold standard for energy efficiency. For more than a decade, virtually every energy-saving initiative—airflow optimization, cooling architecture redesign, free-cooling adoption, scaled liquid-cooling deployment—has targeted a lower PUE.</p>
+                    
+                
+                    
+                <p>AIDC business models, however, are moving from selling GPU-hours to selling tokens. As the commercial unit changes, so must the efficiency metric. PUE measures electricity consumed; it cannot answer what that electricity produced in effective value—a blind spot the industry now confronts.</p>
+                    
+                
+                    
+                <p>At the root lies a fractured data link between power input and token output, a legacy of the industry's existing division of labor.</p>
+                    
+                
+                    
+                <p>• The grid feeds IDCs yet remains blind to the workloads inside the racks;</p>
+                    
+                
+                    
+                <p>• IDCs bill by rack, capacity, or kilowatt-hour, yet often cannot confirm effective GPU utilization;</p>
+                    
+                
+                    
+                <p>• Compute clouds sell card-hours but seldom track the token output those resources generate;</p>
+                    
+                
+                    
+                <p>• Model services bill by token but rarely consider the electricity price underlying each workload.</p>
+                    
+                
+                    
+                <p>Each layer optimizes its own metrics in isolation; global optimality is therefore unattainable.</p>
+                    
+                
+                    
+                <p>The deeper contradiction stems from the old metric's limitations: falling PUE does not guarantee falling total energy use or token cost. Raising supply-air temperature, Lin Hai notes, may trim cooling load and flatter the PUE ledger, yet lift GPU and server-fan draw—leaving total consumption flat or token costs higher.</p>
+                    
+                
+                    
+                <p>Because PUE cannot price the value of the electricity consumed, a new measure is required.</p>
+                    
+                
+                    
+                <p>02 From PUE to TPW: Reframing AIDC Efficiency</p>
+                    
+                
+                    
+                <p>SenseTime's AI infrastructure unit has therefore introduced TPW (Tokens Per Watt), taking effective token output per unit of electricity cost as the core measure, unifying compute efficiency, energy efficiency, and business value.</p>
+                    
+                
+                    
+                <p>PUE measures electricity utilization; TPW asks how many effective tokens each kilowatt-hour yields, incorporating time-of-use tariffs into the economic calculus. Attention shifts accordingly from electricity consumed to effective output produced.</p>
+                    
+                
+                    
+                <p>TPW neither rejects nor merely replaces PUE; it extends PUE into a full-chain assessment from power input to token output. Disparate levers—tariffs, storage, PUE, GPU utilization, model efficiency—are thereby aligned on a single value metric: token output. [IMAGE:1]</p>
+                    
+                
+                    
+                <p>TPW's value lies less in the metric itself than in the shared value language it creates. Utilities, IDCs, compute platforms, and model providers can now optimize against a common standard, rendering compute-energy coordination measurable, replicable, and commercializable.</p>
+                    
+                
+                    
+                <p>03 System-Level Optimization Through Compute-Energy Coordination</p>
+                    
+                
+                    
+                <p>Given a new yardstick, the question becomes how an AIDC can produce more tokens within a fixed power envelope.</p>
+                    
+                
+                    
+                <p>SenseTime's answer is neither more compute nor more capacity. A compute-energy coordination Agent jointly orchestrates workloads, energy supply, and infrastructure, extracting the time value of time-of-use tariffs, demand control, and demand response—and wringing more from each kilowatt-hour.</p>
+                    
+                
+                    
+                <p>The framework proceeds along three layers: data integration, workload scheduling, and compute-energy coordination.</p>
+                    
+                
+                    
+                <p>Step one: data integration and observability</p>
+                    
+                
+                    
+                <p>Optimization begins with observability.</p>
+                    
+                
+                    
+                <p>In a conventional IDC, the power system monitors physical assets—buildings, racks, servers—while the compute platform tracks cloud-native entities—Jobs, Pods, Nodes. Long independent, the two domains cannot answer two critical questions: who consumes the power, and are the loads schedulable?</p>
+                    
+                
+                    
+                <p>SenseTime has accordingly built an eight-tier data-penetration architecture, mapping workloads, compute resources, and physical consumption onto a single timeline. GPU utilization, task-level power, rack load, and building draw are reconciled so that every kilowatt-hour maps to a specific task—the data foundation for forecasting, scheduling, and optimization. [IMAGE:2]</p>
+                    
+                
+                    
+                <p>Zhang Xu, operations director of SenseTime's AIDC, notes: "At the Lingang AIDC control wall, this mapping now operates in production: real-time task power, node GPU utilization, rack and floor load, building IT draw, and feeder-side consumption share a single observation chain—rendering every kilowatt-hour traceable in both destination and output."</p>
+                    
+                
+                    
+                <p>Step two: workload tiering for resource elasticity</p>
+                    
+                
+                    
+                <p>With data unified, optimization proper begins.</p>
+                    
+                
+                    
+                <p>Rather than relocating workloads or adding hardware, SenseTime schedules compute by task-level timing tolerance.</p>
+                    
+                
+                    
+                <p>Real-time workloads—online inference, for example—demand instant response; training, evaluation, and batch jobs tolerate minute-, hour-, or day-scale deferral. Using business priority and latency tolerance, the system shifts deferrable workloads to windows of lower tariffs, lighter load, or greater resource slack, lifting utilization without breaching service quality.</p>
+                    
+                
+                    
+                <p>Total consumption is unchanged; the gain comes from timing. Idle capacity and power are better exploited so that identical capacity and energy yield more effective tokens—and a higher TPW.</p>
+                    
+                
+                    
+                <p>Step three: multi-axis coordination, scaling load-flexibility value</p>
+                    
+                
+                    
+                <p>SenseTime further pairs capacity mining, storage dispatch, and grid demand response in dynamic compute-energy coordination. Load forecasting, capacity optimization, and storage shaving unlock existing infrastructure's latent potential, allowing fixed power to carry more effective compute without new supply capacity.</p>
+                    
+                
+                    
+                <p>Zhang Xu: "Measured results show effective IT carrying capacity up roughly 60% under existing supply. The gain derives not from new capacity but from system-level coordination, enabling the same megawatts to carry more effective compute—sustained efficiency gains across AI infrastructure." [IMAGE:3]</p>
+                    
+                
+                    
+                <p>[Zhang Xu, Operations Director, SenseTime AIDC]</p>
+                    
+                
+                    
+                <p>04 Lingang AIDC: Scaling Compute-Energy Coordination</p>
+                    
+                
+                    
+                <p>The methodology has now been validated at scale at SenseTime's Lingang AIDC.</p>
+                    
+                
+                    
+                <p>In Shanghai's July 10 summer peak-shaving demand-response event, the Lingang AIDC was first to deploy compute-energy coordination: midday baseline load cut 75%, dispatchable load of 23MW, and 46,000 kWh released to the grid over two hours via suspended non-critical tasks, infrastructure drawdown, and storage discharge.</p>
+                    
+                
+                    
+                <p>The AIDC-grid relationship is thus changing. Once rigid loads deserving priority protection, AIDCs now treat load flexibility as an operable, dispatchable asset as tasks become identifiable, tierable, and schedulable. Workloads are timed by business priority; storage, compute, and grid demand move in concert in demand-response participation.</p>
+                    
+                
+                    
+                <p>The shift from PUE to TPW moves optimization from equipment efficiency to whole-system operating efficiency. SenseTime's gains derive not from added compute or power, but from system efficiency latent in task elasticity, resource scheduling, and energy coordination.</p>
+                    
+                
+                    
+                <p>05 The Compute-Energy Coordination Agent: Putting TPW Into Operation</p>
+                    
+                
+                    
+                <p>A new metric alone is insufficient; TPW demands a system engineered to improve it continuously.</p>
+                    
+                
+                    
+                <p>Built on years of AIDC operations, SenseTime's compute-energy coordination Agent is an intelligent scheduling system that perceives, reasons, decides, executes, and evolves. Where traditional energy platforms see only the power side, the Agent links compute, energy, and business in end-to-end optimization, enabling each kilowatt-hour to yield more tokens. [IMAGE:4]</p>
+                    
+                
+                    
+                <p>Architecturally, the Agent relies on an eight-tier data-penetration system, five intelligent decision chains, and six operational capabilities, dismantling silos among workloads, compute, energy, and infrastructure in a closed loop spanning sensing, forecasting, decision, execution, and measurement. Its decisions cover load forecasting, tariff analysis, storage optimization, capacity control, HVAC coordination, and compute scheduling, with TPW as the single objective that unifies previously fragmented optimization actions.</p>
+                    
+                
+                    
+                <p>The Agent is now in full production at the Lingang AIDC: token output per unit of electricity cost up 80%, average tariffs roughly 10% below regional peers, and compute-load forecast accuracy of 96%.</p>
+                    
+                
+                    
+                <p>To enable replication, Zhang Xu notes, the Agent adopts a platform, modular design, converting years of operating experience into reusable capability, with an FDE (Field Domain Expert) system standardizing delivery. New scenarios deploy in as little as one week, fast-scaling the capability.</p>
+                    
+                
+                    
+                <p>For national computing hubs and ten-thousand-card AIDCs, the Agent unifies scheduling of compute, energy, and storage, lifting cluster-wide compute efficiency and improving renewable off-take and total energy cost.</p>
+                    
+                
+                    
+                <p>For compute operators, AI cloud providers, and token factories, the system pairs tariff forecasting with load optimization and compute scheduling to drive per-token electricity costs lower, raising utilization and margins without breaching SLA commitments.</p>
+                    
+                
+                    
+                <p>For enterprise AIDCs, research institutions, and vertical AI platforms, modular architecture and standardized delivery enable rapid deployment without infrastructure rework—yielding smarter, more efficient, and greener operations.</p>
+                    
+                
+                    
+                <p>Lin Hai, general manager of SenseTime's AIDC, argues that the move from PUE to TPW alters not only the metric but the operating model of AI infrastructure itself. Compute-energy coordination, he predicts, will evolve from an AIDC energy-saving tactic into a core capability linking compute, energy, and business. Through its Agent, SenseTime intends to standardize, productize, and scale optimization capability, bringing AI infrastructure into the age of system-level compute efficiency.</p>
+                    
+                
+            
+        </div>
+    </article>
+</div></main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <span class="footer-copy">&copy; 2026 AI Flux &mdash; Curated Tech Intelligence &middot; Professional Translation</span>
+                <span class="footer-page-links">
+                    <a href="../../about/">About</a>
+                    <a href="../../contact/">Contact</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

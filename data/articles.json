@@ -60,6 +60,66 @@
     "created_at": "2026-08-15 16:11:11"
   },
   {
+    "id": 258,
+    "_id64": "6b03b546a858ce0a49bbb0999d63613e2e8643824ae1cd8d7d0514bb6370cc7b",
+    "title": "From PUE to TPW: SenseTime's AI Infrastructure Unit Proposes a New Efficiency Standard",
+    "summary": "SenseTime's AI infrastructure unit has proposed TPW (Tokens Per Watt) as a replacement for PUE, linking power input to token output in a single efficiency measure, and deployed a compute-energy coordination Agent that schedules compute and energy jointly. Field results at the Lingang AIDC: midday load reduced 75%, 46,000 kWh released for peak shaving, token output per unit of electricity up 80%, forecast accuracy 96%.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_258/image_0.jpeg",
+    "url": "/Frontiers/258/",
+    "created_at": "2026-08-15 16:11:11"
+  },
+  {
+    "id": 259,
+    "_id64": "d29e8cb67eeb1515396011341ca5d46105694359f7dc3b8b5fb32a498ac1ac4f",
+    "title": "Inside the CTO Roundtable: Engineering Leaders on Building the AI-Native Organization | Technology Trends",
+    "summary": "Snowflake convened the CTO Circle, gathering more than 350 CTOs to examine the AI-native organization. Developer productivity, managed as a product, produced a marked rise in NPS. AI adoption proceeds through three stages—Adoption, Mastery, and Optimization. As engineering teams are rebuilt for AI, engineer value migrates to judgment and architecture; review has emerged as the new constraint.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_259/image_0.png",
+    "url": "/Frontiers/259/",
+    "created_at": "2026-08-15 16:11:11"
+  },
+  {
+    "id": 260,
+    "_id64": "015878b06156ff98334ad72e5279a66c2136badfabc04fdd652319cbb0ba5de6",
+    "title": "From \"Open Models\" to \"Open Ecosystems,\" AI Open Source Enters a New Phase",
+    "summary": "AI open source is shifting from \"open models\" to \"open ecosystems.\" Meta has released open-weight model Muse Glimmer; Kimi K3 and Qwen3.8-Max have adopted tiered commercial licenses constraining MaaS scenarios and revenue thresholds. The GOAI competition demonstrates that an open ecosystem's value resides in runnability, verifiability, reusability, and sustained construction upon prior work.",
+    "category": "Dev Hub",
+    "thumbnail": "/asset/images/article_260/image_0.jpg",
+    "url": "/Dev Hub/260/",
+    "created_at": "2026-08-15 16:11:11"
+  },
+  {
+    "id": 243,
+    "_id64": "a14645b800e3a9f3dc5c20fbce07601352498314ea71b67db46e091e410628a4",
+    "title": "MiniMax Unveils Music3, a Music Model Capable of Generating Songs Up to Five Minutes Long From Lyrics and Descriptions",
+    "summary": "MiniMax has released MiniMax-Music3, a music-generation model that converts lyrics and descriptions into complete songs of up to five minutes in 32kHz stereo. Built on a hierarchical autoregressive architecture, the system pairs an 8B global language model—responsible for long-range semantics and structure—with a 0.6B local model that reconstructs acoustic detail, sustaining theme, rhythm, and arrangement throughout. The model is publicly listed on Hugging Face, with sample tracks available for review.",
+    "category": "Tools",
+    "thumbnail": "/asset/images/article_243/image_0.png",
+    "url": "/Tools/243/",
+    "created_at": "2026-08-15 16:01:06"
+  },
+  {
+    "id": 244,
+    "_id64": "569f2f0b1183fdc088262c919d5ad8cc27205f801d209e498dc38687eb5732c7",
+    "title": "More than 200 partners have already joined, as Qwen's open platform speeds deployment of AI agents",
+    "summary": "Four days after launch, the Qwen Open Platform has drawn more than 200 ecosystem partners. Developers can build AI agents and integrate them with the Qwen app, with coverage spanning logistics, property, local services, wealth management, and autos. SF Express, Beike, Lenovo, Cainiao, and Quark Drive are among those already onboarded. By supplying accounts, AI payment rails, order integration, and front-end templates, the platform lowers entry costs and positions AI agents as access points to real-world services.",
+    "category": "Frontiers",
+    "thumbnail": "/asset/images/article_244/image_0.jpg",
+    "url": "/Frontiers/244/",
+    "created_at": "2026-08-15 16:01:06"
+  },
+  {
+    "id": 246,
+    "_id64": "e2502b3d0e3c2cb559f22f31f66a4f68b44ba57430ca8c387f79c4cb5b9ed9e5",
+    "title": "Apple's HomePod mini 2 Is Expected This Fall, Six Years After the Original, With the AI Chip Driving the Refresh",
+    "summary": "The second-generation HomePod mini is expected as soon as this fall, nearly six years after the original's debut. Its delay has been attributed largely to Apple's wait for a mature next-generation Siri. The new model will carry a faster chip to meet the on-device AI requirements of the assistant, alongside upgrades to UWB connectivity and audio quality. Multiple hardware lines have been pushed back by the pace of Apple's AI development; the entry-level speaker is now framed as a testbed for on-device AI and a bid to repair Siri's standing.",
+    "category": "Frontiers",
+    "thumbnail": "",
+    "url": "/Frontiers/246/",
+    "created_at": "2026-08-15 16:01:06"
+  },
+  {
     "id": 195,
     "_id64": "c12ee4c1db0e1344e1ac177ae08779b53d549a368d33ab3bf446852452d16f83",
     "title": "Ant LingBot Debuts LingBot-Depth 2.0: A Spatial Perception Model Trained on 150 Million Samples, Achieving Sharper Vision and Greater Precision",

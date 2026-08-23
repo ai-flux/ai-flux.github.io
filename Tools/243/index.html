@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="AI Flux">
+    
+<title>MiniMax Unveils Music3, a Music Model Capable of Generating Songs Up to Five Minutes Long From Lyrics and Descriptions - AI Flux &mdash; Curated Tech Intelligence</title>
+<meta name="description" content="MiniMax has released MiniMax-Music3, a music-generation model that converts lyrics and descriptions into complete songs of up to five minutes in 32kHz stereo. Built on a hierarchical autoregressive architecture, the system pairs an 8B global language model—responsible for long-range semantics and structure—with a 0.6B local model that reconstructs acoustic detail, sustaining theme, rhythm, and arrangement throughout. The model is publicly listed on Hugging Face, with sample tracks available for review." />
+<link rel="canonical" href="https://ai-flux.top/Tools/243/" />
+<meta property="og:title" content="MiniMax Unveils Music3, a Music Model Capable of Generating Songs Up to Five Minutes Long From Lyrics and Descriptions" />
+<meta property="og:description" content="MiniMax has released MiniMax-Music3, a music-generation model that converts lyrics and descriptions into complete songs of up to five minutes in 32kHz stereo. Built on a hierarchical autoregressive architecture, the system pairs an 8B global language model—responsible for long-range semantics and structure—with a 0.6B local model that reconstructs acoustic detail, sustaining theme, rhythm, and arrangement throughout. The model is publicly listed on Hugging Face, with sample tracks available for review." />
+<meta property="og:image" content="https://ai-flux.top/asset/images/article_243/image_0.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "MiniMax Unveils Music3, a Music Model Capable of Generating Songs Up to Five Minutes Long From Lyrics and Descriptions",
+  "description": "MiniMax has released MiniMax-Music3, a music-generation model that converts lyrics and descriptions into complete songs of up to five minutes in 32kHz stereo. Built on a hierarchical autoregressive architecture, the system pairs an 8B global language model—responsible for long-range semantics and structure—with a 0.6B local model that reconstructs acoustic detail, sustaining theme, rhythm, and arrangement throughout. The model is publicly listed on Hugging Face, with sample tracks available for review.",
+  "image": "https://ai-flux.top/asset/images/article_243/image_0.png",
+  "datePublished": "2026-08-15T16:01:06Z"
+}
+</script>
+
+    <link rel="stylesheet" href="../../assets/css/style.css?v=2">
+        <!-- ===== 统计代码钩子（由 config.yaml 驱动） ===== -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XGDSPRE0L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-0XGDSPRE0L');
+    </script>
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?85296c1ac38b768654710957114c951f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+    
+    <script>console.log('Custom analytics loaded');
+</script>
+    
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                <div class="site-title"><a href="../../">AI Flux</a></div>
+                <div class="header-nav">
+                    <a href="../../about/">About</a>
+                    <span class="header-nav-sep">|</span>
+                    <a href="../../contact/">Contact</a>
+                </div>
+            </div>
+        </header>
+        <nav class="category-nav">
+            <div class="container" style="display:flex;gap:24px;">
+                <a href="../../" class="">Home</a>
+                
+                <a href="../../?category=Frontiers" class="">Frontiers</a>
+                
+                <a href="../../?category=Deep Reads" class="">Deep Reads</a>
+                
+                <a href="../../?category=Business" class="">Business</a>
+                
+                <a href="../../?category=Dev Hub" class="">Dev Hub</a>
+                
+                <a href="../../?category=Tools" class="active">Tools</a>
+                
+                <a href="../../?category=Reports" class="">Reports</a>
+                
+            </div>
+        </nav>
+        
+<main><div class="container">
+    <article class="article-detail">
+        <h1>MiniMax Unveils Music3, a Music Model Capable of Generating Songs Up to Five Minutes Long From Lyrics and Descriptions</h1>
+        <div class="meta">
+            <span class="category-tag" style="display:inline-block;background:var(--wsj-accent);color:white;font-family:var(--wsj-font-sans);font-size:11px;font-weight:600;padding:2px 10px;border-radius:12px;text-transform:uppercase;letter-spacing:0.5px;margin-right:12px;">Tools</span>
+            <span>Aug 15, 2026</span>
+        </div>
+        <div id="tab-content-wall_street" class="tab-content">
+            
+                
+                    
+                <p>MiniMax Unveils Music3, a Music Model Capable of Generating Songs Up to Five Minutes Long From Lyrics and Descriptions</p>
+                    
+                
+                    
+                <p>MiniMax today unveiled MiniMax-Music3, a music-generation model that turns lyrics and musical descriptions into complete songs of up to five minutes, output as 32kHz, 16-bit stereo WAV files.</p>
+                    
+                
+                    
+                <p>The model is underpinned by a hierarchical autoregressive architecture in which two components operate in concert. An 8B global language model, initialized from Qwen3-8B, predicts the first RVQ codebook frame by frame, governing long-range semantics and structural evolution; its embedding and output layers were first adapted to music-semantic tokens before joint modeling of all codebooks with the local model. A 0.6B local language model then predicts the remaining acoustic codebooks within each frame, recovering fine-grained acoustic detail. Structure is set by the large model; sonic texture is filled in by the small one—a clearly delineated division of labor. [IMAGE:0]</p>
+                    
+                
+                    
+                <p>MiniMax states that the model sustains musical theme, rhythm, vocal identity, and arrangement progression across extended audio, preserving each structural section—intro, verse, pre-chorus, chorus, bridge, instrumental interlude, and outro. A model page has been published on GitHub, with generated song samples made available for listening.</p>
+                    
+                
+                    
+                <p>
+</p>
+                    
+                
+            
+        </div>
+    </article>
+</div></main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <span class="footer-copy">&copy; 2026 AI Flux &mdash; Curated Tech Intelligence &middot; Professional Translation</span>
+                <span class="footer-page-links">
+                    <a href="../../about/">About</a>
+                    <a href="../../contact/">Contact</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
